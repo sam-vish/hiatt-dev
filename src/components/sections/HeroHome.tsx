@@ -93,11 +93,11 @@ export default function HeroHome() {
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/hero.mp4"
+        src="/videos-compressed/hero.mp4"
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         style={{ filter: 'url(#hero-warp) brightness(0.85)' }}
       />
 

@@ -19,7 +19,7 @@ export default function StoryBlock() {
             <div className="aspect-[3/4] relative overflow-hidden">
               <video
                 className="absolute inset-0 h-full w-full object-cover grayscale animate-kenburns"
-                src="/videos/hero.mp4"
+                src="/videos-compressed/hero.mp4"
                 muted
                 loop
                 playsInline
