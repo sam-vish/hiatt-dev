@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 
 export default function PageLoader({ visible }: { visible: boolean }) {
   const loaderRef = useRef<HTMLDivElement>(null)
@@ -35,43 +36,29 @@ export default function PageLoader({ visible }: { visible: boolean }) {
     >
       <div className="absolute inset-0 grain animate-grain-shift" />
 
-      <div className="relative flex flex-col items-center gap-10">
-        <div className="relative">
-          <div
-            className="w-24 h-24 rounded-full flex items-center justify-center relative overflow-hidden"
-            style={{
-              background:
-                'linear-gradient(135deg, #C9B8A4 0%, #E8DDD0 25%, #B8A089 50%, #E8DDD0 75%, #C9B8A4 100%)',
-              boxShadow:
-                'inset 0 1px 2px rgba(255,255,255,0.4), inset 0 -1px 2px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15)',
-            }}
-          >
-            <span
-              className="font-display text-3xl font-light tracking-widest"
-              style={{
-                background: 'linear-gradient(135deg, #B8A089 0%, #E8DDD0 50%, #C9B8A4 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                filter:
-                  'drop-shadow(1px 1px 1px rgba(255,255,255,0.4)) drop-shadow(-1px -1px 1px rgba(0,0,0,0.2))',
-              }}
-            >
-              HDC
-            </span>
-          </div>
-          <svg className="absolute inset-0 w-24 h-24" viewBox="0 0 112 112">
+      <div className="relative flex flex-col items-center gap-12">
+        <div className="relative w-40 h-40 flex items-center justify-center">
+          <Image
+            src="/logos/Logo.avif"
+            alt="Hiatt Development Co."
+            width={318}
+            height={158}
+            priority
+            className="w-28 h-auto relative z-10"
+          />
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 160 160">
             <circle
-              cx="56"
-              cy="56"
-              r="54"
+              cx="80"
+              cy="80"
+              r="78"
               fill="none"
               stroke="#8B6F47"
               strokeWidth="1"
-              strokeDasharray="339.292"
-              strokeDashoffset="339.292"
+              strokeDasharray="490"
+              strokeDashoffset="490"
               style={{
                 animation: visible
-                  ? 'drawStroke 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards'
+                  ? 'drawStroke 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards'
                   : 'none',
               }}
             />

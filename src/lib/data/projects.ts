@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     city: 'Windermere, FL',
     year: 2024,
     type: 'Residential',
-    cover: '/videos/portfolio-1.mp4',
+    cover: '/videos-compressed/isleworth-residence.mp4',
     ratio: '4/3',
     brief:
       'A whole-house glazing replacement on a Mediterranean-revival estate. Forty-two openings, six folding walls, one continuous threshold from kitchen to lanai.',
@@ -33,8 +33,8 @@ export const PROJECTS: Project[] = [
     ],
     brands: ['Andersen', 'Euro-Wall', 'PGT'],
     gallery: [
-      { src: '/videos/portfolio-1.mp4', ratio: '16/9', caption: 'Great room — fully retracted' },
-      { src: '/videos/portfolio-2.mp4', ratio: '4/3', caption: 'Kitchen casement reset' },
+      { src: '/videos-compressed/isleworth-residence.mp4', ratio: '16/9', caption: 'Great room — fully retracted' },
+      { src: '/images/kitchen-casement.webp', ratio: '4/3', caption: 'Kitchen casement reset' },
     ],
     facts: [
       { label: 'Openings', value: '42' },
@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     city: 'Lake Nona, FL',
     year: 2024,
     type: 'Residential',
-    cover: '/videos/portfolio-2.mp4',
+    cover: '/videos-compressed/lakenona-residence.mp4',
     ratio: '3/4',
     brief:
       'New construction modern. SuperHouse slim-steel walls front and back, with a 12-foot pivot door at the entry that swings on a single floor bearing.',
@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     ],
     brands: ['SuperHouse'],
     gallery: [
-      { src: '/videos/portfolio-2.mp4', ratio: '16/9', caption: 'Front elevation' },
+      { src: '/images/front-elevation-of-lake-nona.webp', ratio: '16/9', caption: 'Front elevation' },
     ],
     facts: [
       { label: 'Tallest leaf', value: '12 ft' },
@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
     city: 'Winter Park, FL',
     year: 2023,
     type: 'Residential',
-    cover: '/videos/portfolio-1.mp4',
+    cover: '/videos-compressed/winter-park-bungalow.mp4',
     ratio: '16/9',
     brief:
       'Historic bungalow restoration. The challenge was hurricane-rating the windows without changing how the house reads from the street.',
@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
       'Trim and casing restoration in heart pine',
     ],
     brands: ['Andersen'],
-    gallery: [{ src: '/videos/portfolio-1.mp4', ratio: '4/3' }],
+    gallery: [{ src: '/videos-compressed/winter-park-bungalow.mp4', ratio: '4/3' }],
     facts: [
       { label: 'Era', value: '1924' },
       { label: 'Historic district', value: 'Yes' },
@@ -93,26 +93,27 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'downtown-tower-lobby',
-    title: 'Downtown Tower Lobby',
-    city: 'Orlando, FL',
+    slug: 'oceanfront-euro-wall-installation',
+    title: 'Oceanfront Euro-Wall Installation',
+    city: 'New Smyrna Beach, FL',
     year: 2023,
-    type: 'Commercial',
-    cover: '/videos/portfolio-2.mp4',
+    type: 'Residential',
+    cover: '/videos-compressed/oceanfront-euro-wall-installation.mp4',
     ratio: '4/3',
     brief:
-      'Storefront and lobby reglazing on an occupied 14-story tower. Night-shift install, zero downtime to the operating floors.',
+      'A direct-oceanfront Euro-Wall install staged from the beach side. Crane-lifted the great-room panels over the dune line and set them on a single continuous threshold.',
     scope: [
-      'Phased nighttime install across 6 weekends',
-      'Storefront aluminum, low-E laminated glass',
-      'Vestibule reset and ADA threshold compliance',
+      'Crane-staged delivery over the dune',
+      'Euro-Wall 7700 multi-slide on the great room',
+      'Continuous floor track set flush to the deck',
+      'Marine-grade hardware specified for salt exposure',
     ],
-    brands: ['PGT'],
-    gallery: [{ src: '/videos/portfolio-2.mp4', ratio: '16/9' }],
+    brands: ['Euro-Wall'],
+    gallery: [{ src: '/videos-compressed/oceanfront-euro-wall-installation.mp4', ratio: '16/9' }],
     facts: [
-      { label: 'Stories occupied during install', value: '14' },
-      { label: 'Downtime', value: '0 business hours' },
-      { label: 'Duration', value: '6 weeks' },
+      { label: 'Heaviest panel', value: '780 lb' },
+      { label: 'Lift method', value: 'Crane over dune' },
+      { label: 'Duration', value: '9 weeks' },
     ],
   },
   {
@@ -121,13 +122,13 @@ export const PROJECTS: Project[] = [
     city: 'Baldwin Park, FL',
     year: 2023,
     type: 'Residential',
-    cover: '/videos/portfolio-1.mp4',
+    cover: '/videos-compressed/baldwin-park-renovation.mp4',
     ratio: '3/4',
     brief:
       'A whole-back-of-house openness. Two folding walls and a kitchen pass-through replaced what used to be three small windows.',
     scope: ['Euro-Wall 4400 folding system', 'New header structural', 'Bi-parting kitchen pass-through'],
     brands: ['Euro-Wall'],
-    gallery: [{ src: '/videos/portfolio-1.mp4', ratio: '4/3' }],
+    gallery: [{ src: '/videos-compressed/baldwin-park-renovation.mp4', ratio: '4/3' }],
     facts: [
       { label: 'Opening width', value: '24 ft' },
       { label: 'Folded stack', value: '14"' },
@@ -140,13 +141,13 @@ export const PROJECTS: Project[] = [
     city: 'Cocoa Beach, FL',
     year: 2022,
     type: 'Residential',
-    cover: '/videos/portfolio-2.mp4',
+    cover: '/videos-compressed/cocoa-beach-coastal-home.mp4',
     ratio: '4/3',
     brief:
       'Direct ocean exposure. Every assembly tested to Large Missile, Level D, with hardware specified for salt-air longevity.',
     scope: ['PGT WinGuard Aluminum throughout', 'Marine-grade hardware', 'Re-stucco and re-finish'],
     brands: ['PGT'],
-    gallery: [{ src: '/videos/portfolio-2.mp4', ratio: '4/3' }],
+    gallery: [{ src: '/videos-compressed/cocoa-beach-coastal-home.mp4', ratio: '4/3' }],
     facts: [
       { label: 'Wind exposure', value: 'Direct ocean' },
       { label: 'Wind rating', value: 'Large Missile, Level D' },

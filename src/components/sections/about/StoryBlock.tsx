@@ -17,20 +17,16 @@ export default function StoryBlock() {
           </Reveal>
           <div className="mt-12 relative">
             <div className="aspect-[3/4] relative overflow-hidden">
-              <video
+              <img
+                src="/images/jason-hiatt.webp"
+                alt="Jason Hiatt, founder"
                 className="absolute inset-0 h-full w-full object-cover grayscale animate-kenburns"
-                src="/videos-compressed/hero.mp4"
-                muted
-                loop
-                playsInline
-                autoPlay
-                preload="metadata"
               />
               <div className="absolute inset-0 bg-florida-oak/15 mix-blend-multiply" />
               <div className="absolute inset-0 grain animate-grain-shift opacity-25" />
             </div>
             <div className="mt-3 font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
-              Archival · 2008 · Orlando
+              Jason Hiatt · Founder
             </div>
           </div>
         </div>

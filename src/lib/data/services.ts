@@ -13,14 +13,14 @@ export const PILLARS: Pillar[] = [
     id: 'residential',
     num: '01',
     name: 'Custom Residential',
-    blurb: 'Building your home from the ground up — or transforming the one you already love.',
+    blurb: 'Building your home from the ground up or transforming the one you already love.',
     details: [
       'Whole-house glazing',
       'Renovation and additions',
       'Historic-district sensitive installs',
       'New construction package management',
     ],
-    video: '/videos/residential.mp4',
+    video: '/videos-compressed/custom-residential.mp4',
     href: '/services#residential',
   },
   {
@@ -34,7 +34,7 @@ export const PILLARS: Pillar[] = [
       'Phased and night-shift installs',
       'Code compliance and permitting',
     ],
-    video: '/videos/commercial.mp4',
+    video: '/videos-compressed/commercial.mp4',
     href: '/services#commercial',
   },
   {
@@ -48,7 +48,7 @@ export const PILLARS: Pillar[] = [
       'Multi-track sliding and folding wall systems',
       'Pivot doors and custom millwork integration',
     ],
-    video: '/videos/services.mp4',
+    video: '/videos-compressed/oceanfront-euro-wall-installation.mp4',
     href: '/services#installation',
   },
 ]

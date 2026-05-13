@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const NAV = [
@@ -52,15 +53,19 @@ export default function Navigation() {
               : 'bg-transparent'
         }`}
       >
-        <div className={`mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[72px] ${text}`}>
-          <Link href="/" className="group flex items-center gap-3">
-            <span className="font-display italic text-[20px] tracking-tight">
-              Hiatt
-            </span>
-            <span className={`hidden md:block h-px w-8 ${accentLine} group-hover:bg-golden-amber transition-colors`} />
-            <span className={`hidden md:block font-mono text-[10px] tracking-[0.3em] uppercase ${subtle}`}>
-              Development&nbsp;Co.
-            </span>
+        <div className={`mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[88px] ${text}`}>
+          <Link href="/" aria-label="Hiatt Development Co. — Home" className="group flex items-center gap-3">
+            <Image
+              src="/logos/Logo.avif"
+              alt="Hiatt Development Co."
+              width={318}
+              height={158}
+              priority
+              className="h-12 md:h-14 w-auto transition-[filter] duration-500"
+              style={{
+                filter: darkHero ? 'brightness(0) invert(1)' : 'none',
+              }}
+            />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">

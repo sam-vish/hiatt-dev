@@ -34,7 +34,7 @@ export const BRANDS: Brand[] = [
       { label: 'Energy', value: 'ENERGY STAR rated, U-factor as low as 0.27' },
       { label: 'Origin', value: 'North Venice, FL · since 1980' },
     ],
-    video: '/videos/pgt.mp4',
+    video: '/videos-compressed/pgt.mp4',
     accent: '#D4A24C',
   },
   {
@@ -59,7 +59,7 @@ export const BRANDS: Brand[] = [
       { label: 'Warranty', value: '20-yr glass · 10-yr non-glass (transferable)' },
       { label: 'Origin', value: 'Bayport, MN · since 1903' },
     ],
-    video: '/videos/andersen.mp4',
+    video: '/videos-compressed/andersen.mp4',
     accent: '#D4A24C',
   },
   {

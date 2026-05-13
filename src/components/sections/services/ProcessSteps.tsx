@@ -67,12 +67,12 @@ export default function ProcessSteps() {
             >
               <Reveal delay={i * 0.04}>
                 <div
-                  className={`absolute top-1 ${
-                    i % 2 === 0 ? 'md:right-[-9px]' : 'md:left-[-9px]'
-                  } left-[15px] md:left-auto h-4 w-4 rounded-full border border-golden-amber bg-ink z-10 flex items-center justify-center`}
-                >
-                  <span className="block h-1.5 w-1.5 rounded-full bg-golden-amber" />
-                </div>
+                  className={`absolute top-1 left-[19px] h-2.5 w-2.5 rounded-full bg-golden-amber z-10 ${
+                    i % 2 === 0
+                      ? 'md:left-auto md:right-[-5px]'
+                      : 'md:left-[-5px]'
+                  }`}
+                />
                 <div className="pl-12 md:pl-0">
                   <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/50 mb-4 tabular-nums">
                     {step.num}

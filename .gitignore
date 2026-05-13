@@ -25,3 +25,6 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+# Raw video source files (compressed versions live in public/videos-compressed/)
+public/videos/*.mov
