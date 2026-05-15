@@ -37,7 +37,7 @@ export default function NotFound() {
               data-cursor-hover
             >
               <span className="tabular-nums">{String(i + 1).padStart(2, '0')}</span>
-              <span className="h-px w-12 bg-pivot-black group-hover:bg-golden-amber transition-colors" />
+              <span className="h-px w-12 bg-florida-oak group-hover:bg-golden-amber transition-colors" />
               {l.label}
               <span>→</span>
             </Link>

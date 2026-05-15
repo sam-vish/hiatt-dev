@@ -32,8 +32,8 @@ export default function PortfolioGrid({ projects }: { projects: Project[] }) {
                 data-cursor-hover
                 className={`font-mono text-[11px] tracking-[0.3em] uppercase px-4 py-2 border transition-colors duration-300 ${
                   active
-                    ? 'border-pivot-black bg-pivot-black text-travertine'
-                    : 'border-concrete/40 text-pivot-black hover:border-pivot-black'
+                    ? 'border-florida-oak bg-florida-oak text-travertine'
+                    : 'border-concrete/40 text-pivot-black hover:border-florida-oak'
                 }`}
               >
                 {f}

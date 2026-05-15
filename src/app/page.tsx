@@ -1,6 +1,7 @@
 import HeroHome from '@/components/sections/HeroHome'
 import PillarTiles from '@/components/sections/PillarTiles'
 import StatementBlock from '@/components/sections/StatementBlock'
+import ClientLogos from '@/components/sections/ClientLogos'
 import BrandRoster from '@/components/sections/BrandRoster'
 import PortfolioStrip from '@/components/sections/PortfolioStrip'
 import CtaBlock from '@/components/sections/CtaBlock'
@@ -20,6 +21,8 @@ export default function HomePage() {
         }
         emphasis="Custom windows & doors, installed with conviction."
       />
+
+      <ClientLogos />
 
       <PillarTiles
         pillars={PILLARS.map((p) => ({

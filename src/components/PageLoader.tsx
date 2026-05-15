@@ -52,7 +52,7 @@ export default function PageLoader({ visible }: { visible: boolean }) {
               cy="80"
               r="78"
               fill="none"
-              stroke="#8B6F47"
+              stroke="#1F3A57"
               strokeWidth="1"
               strokeDasharray="490"
               strokeDashoffset="490"
@@ -71,7 +71,7 @@ export default function PageLoader({ visible }: { visible: boolean }) {
           </div>
           <div className="relative h-px w-[220px] bg-concrete/20">
             <div
-              className="absolute inset-y-0 left-0 bg-pivot-black"
+              className="absolute inset-y-0 left-0 bg-florida-oak"
               style={{ width: `${count}%`, transition: 'width 80ms linear' }}
             />
           </div>

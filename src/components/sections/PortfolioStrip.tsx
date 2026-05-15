@@ -26,7 +26,7 @@ export default function PortfolioStrip({ projects }: { projects: Project[] }) {
               className="hidden md:inline-flex items-center gap-3 font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black hover:text-golden-amber transition-colors"
               data-cursor-hover
             >
-              <span className="h-px w-12 bg-pivot-black" />
+              <span className="h-px w-12 bg-florida-oak" />
               View all work
             </Link>
           </Reveal>
@@ -43,7 +43,7 @@ export default function PortfolioStrip({ projects }: { projects: Project[] }) {
             href="/portfolio"
             className="inline-flex items-center gap-3 font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black"
           >
-            <span className="h-px w-12 bg-pivot-black" />
+            <span className="h-px w-12 bg-florida-oak" />
             View all work
           </Link>
         </div>

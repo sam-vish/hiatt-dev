@@ -1,8 +1,7 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import Lenis from 'lenis'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollProgress from '@/components/ScrollProgress'
@@ -18,32 +17,16 @@ if (typeof window !== 'undefined') {
 
 export default function SiteShell({ children }: { children: React.ReactNode }) {
   const [loaded, setLoaded] = useState(false)
-  const lenisRef = useRef<Lenis | null>(null)
   const pathname = usePathname()
 
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: 0.1,
-      duration: 1.2,
-    })
-    lenisRef.current = lenis
-    lenis.on('scroll', ScrollTrigger.update)
-    const tick = (time: number) => lenis.raf(time * 1000)
-    gsap.ticker.add(tick)
-    gsap.ticker.lagSmoothing(0)
-
     const timer = setTimeout(() => setLoaded(true), 1800)
-    return () => {
-      clearTimeout(timer)
-      lenis.destroy()
-      gsap.ticker.remove(tick)
-    }
+    return () => clearTimeout(timer)
   }, [])
 
   // Reset scroll + refresh ScrollTrigger on route change
   useEffect(() => {
-    if (!lenisRef.current) return
-    lenisRef.current.scrollTo(0, { immediate: true })
+    window.scrollTo(0, 0)
     requestAnimationFrame(() => ScrollTrigger.refresh())
   }, [pathname])
 

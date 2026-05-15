@@ -109,7 +109,7 @@ export default async function BrandPage({ params }: Props) {
             {next.name}
           </span>
           <span className="md:col-span-3 md:text-right font-mono text-[10px] tracking-[0.3em] uppercase text-pivot-black flex md:justify-end items-center gap-3">
-            <span className="h-px w-12 bg-pivot-black group-hover:bg-golden-amber transition-colors" />
+            <span className="h-px w-12 bg-florida-oak group-hover:bg-golden-amber transition-colors" />
             Open
             <span>→</span>
           </span>

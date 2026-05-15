@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    --background: 30 22% 86%;
+    --background: 0 0% 100%;
     --foreground: 0 0% 10%;
-    --card: 30 22% 86%;
+    --card: 0 0% 100%;
     --card-foreground: 0 0% 10%;
-    --popover: 30 22% 86%;
+    --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
-    --primary: 0 0% 10%;
-    --primary-foreground: 30 22% 86%;
-    --secondary: 30 14% 41%;
+    --primary: 213 47% 23%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 41%;
     --secondary-foreground: 0 0% 10%;
-    --muted: 30 10% 80%;
+    --muted: 210 14% 95%;
     --muted-foreground: 0 0% 42%;
-    --accent: 38 54% 56%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 213 47% 23%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 42%;
-    --input: 0 0% 42%;
-    --ring: 38 54% 56%;
+    --border: 210 14% 88%;
+    --input: 210 14% 88%;
+    --ring: 213 47% 23%;
     --radius: 0px;
 
-    --travertine: #E8DDD0;
-    --florida-oak: #8B6F47;
+    --travertine: #FFFFFF;
+    --florida-oak: #1F3A57;
     --pivot-black: #1A1A1A;
     --hurricane-glass: #A8B5BC;
-    --golden-amber: #D4A24C;
+    --golden-amber: #1F3A57;
     --concrete: #6B6B6B;
-    --pool-turquoise: #4A8B8B;
+    --pool-turquoise: #5A7CA0;
   }
 
   body {
@@ -84,7 +84,7 @@
 
   .hairline {
     height: 1px;
-    background-color: rgba(107, 107, 107, 0.3);
+    background-color: rgba(31, 58, 87, 0.18);
   }
 
   .hairline-white {
@@ -94,7 +94,7 @@
 
   .hairline-amber {
     height: 1px;
-    background-color: rgba(212, 162, 76, 0.6);
+    background-color: rgba(31, 58, 87, 0.5);
   }
 
   .display-italic {
