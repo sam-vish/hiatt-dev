@@ -166,7 +166,7 @@ export default async function ProjectPage({ params }: Props) {
             {next.title}
           </span>
           <span className="md:col-span-3 md:text-right font-mono text-[10px] tracking-[0.3em] uppercase text-pivot-black flex md:justify-end items-center gap-3">
-            <span className="h-px w-12 bg-pivot-black group-hover:bg-golden-amber transition-colors" />
+            <span className="h-px w-12 bg-florida-oak group-hover:bg-golden-amber transition-colors" />
             Read
             <span>→</span>
           </span>

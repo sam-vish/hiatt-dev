@@ -71,7 +71,7 @@ function BrandRow({ brand, index }: { brand: Brand; index: number }) {
         </div>
         <div className="flex items-center gap-3 font-mono text-[10px] tracking-[0.3em] uppercase text-pivot-black group-hover:text-golden-amber transition-colors">
           <span>Open the spec</span>
-          <span className="h-px w-10 bg-pivot-black group-hover:bg-golden-amber transition-colors" />
+          <span className="h-px w-10 bg-florida-oak group-hover:bg-golden-amber transition-colors" />
           <span>↗</span>
         </div>
       </div>

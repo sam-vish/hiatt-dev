@@ -35,7 +35,7 @@ export const BRANDS: Brand[] = [
       { label: 'Origin', value: 'North Venice, FL · since 1980' },
     ],
     video: '/videos-compressed/pgt.mp4',
-    accent: '#D4A24C',
+    accent: '#1F3A57',
   },
   {
     slug: 'andersen',
@@ -60,7 +60,7 @@ export const BRANDS: Brand[] = [
       { label: 'Origin', value: 'Bayport, MN · since 1903' },
     ],
     video: '/videos-compressed/andersen.mp4',
-    accent: '#D4A24C',
+    accent: '#2C5282',
   },
   {
     slug: 'superhouse',
@@ -110,7 +110,7 @@ export const BRANDS: Brand[] = [
       { label: 'Origin', value: 'Naples, FL · since 1996' },
     ],
     video: '/videos/euro-wall.mp4',
-    accent: '#8B6F47',
+    accent: '#5A7CA0',
   },
 ]
 

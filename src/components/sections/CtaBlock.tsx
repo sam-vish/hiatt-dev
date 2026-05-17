@@ -38,7 +38,7 @@ export default function CtaBlock({
                 href={ctaHref}
                 data-cursor-hover
                 data-cursor-label="say hi"
-                className="group relative inline-flex items-center gap-3 px-8 py-5 border border-pivot-black font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black overflow-hidden"
+                className="group relative inline-flex items-center gap-3 px-8 py-5 border border-florida-oak font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black overflow-hidden"
               >
                 <span className="relative z-10 transition-colors duration-500 group-hover:text-travertine">
                   {ctaLabel}
@@ -46,7 +46,7 @@ export default function CtaBlock({
                 <span className="relative z-10 transition-colors duration-500 group-hover:text-travertine">
                   →
                 </span>
-                <span className="absolute inset-0 z-0 origin-left scale-x-0 bg-pivot-black transition-transform duration-700 ease-exhale group-hover:scale-x-100" />
+                <span className="absolute inset-0 z-0 origin-left scale-x-0 bg-florida-oak transition-transform duration-700 ease-exhale group-hover:scale-x-100" />
               </Link>
             </MagneticLink>
           </Reveal>

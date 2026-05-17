@@ -132,7 +132,7 @@ export default function ContactBlock() {
                 <button
                   type="submit"
                   data-cursor-hover
-                  className="group relative inline-flex items-center justify-between gap-3 px-6 py-4 border border-pivot-black font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black overflow-hidden mt-4"
+                  className="group relative inline-flex items-center justify-between gap-3 px-6 py-4 border border-florida-oak font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black overflow-hidden mt-4"
                 >
                   <span className="relative z-10 transition-colors duration-500 group-hover:text-travertine">
                     Send the request
@@ -140,7 +140,7 @@ export default function ContactBlock() {
                   <span className="relative z-10 transition-colors duration-500 group-hover:text-travertine">
                     →
                   </span>
-                  <span className="absolute inset-0 z-0 origin-left scale-x-0 bg-pivot-black transition-transform duration-700 ease-exhale group-hover:scale-x-100" />
+                  <span className="absolute inset-0 z-0 origin-left scale-x-0 bg-florida-oak transition-transform duration-700 ease-exhale group-hover:scale-x-100" />
                 </button>
               </form>
             )}
@@ -183,7 +183,7 @@ function Field({
         className="w-full bg-transparent border-0 border-b py-2 font-body text-base text-pivot-black outline-none transition-colors"
         style={{
           borderBottomWidth: 1,
-          borderBottomColor: focused ? '#D4A24C' : 'rgba(107,107,107,0.4)',
+          borderBottomColor: focused ? '#1F3A57' : 'rgba(107,107,107,0.4)',
         }}
       />
     </div>

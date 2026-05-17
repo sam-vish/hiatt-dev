@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const NAV = [
@@ -15,56 +14,24 @@ const NAV = [
 ]
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
 
   useEffect(() => setOpen(false), [pathname])
 
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href)
 
-  // Pages with a dark video hero need light nav text until the user scrolls
-  // past the hero. Right now that's just home and individual project pages.
-  const darkHero =
-    !scrolled &&
-    !open &&
-    (pathname === '/' || pathname.startsWith('/portfolio/'))
-
-  const text = darkHero ? 'text-travertine' : 'text-pivot-black'
-  const subtle = darkHero ? 'text-travertine/60' : 'text-concrete'
-  const accentLine = darkHero ? 'bg-travertine/40' : 'bg-concrete/40'
-
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-[70] transition-all duration-500 ease-exhale ${
-          scrolled || open
-            ? 'backdrop-blur-md bg-travertine/85 border-b border-concrete/15'
-            : darkHero
-              ? 'bg-gradient-to-b from-ink/50 to-transparent'
-              : 'bg-transparent'
-        }`}
-      >
-        <div className={`mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[88px] ${text}`}>
+      <header className="fixed top-0 left-0 right-0 z-[70] bg-florida-oak text-travertine">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[88px]">
           <Link href="/" aria-label="Hiatt Development Co. — Home" className="group flex items-center gap-3">
-            <Image
-              src="/logos/Logo.avif"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logos/hdc-logo-white.svg"
               alt="Hiatt Development Co."
-              width={318}
-              height={158}
-              priority
-              className="h-12 md:h-14 w-auto transition-[filter] duration-500"
-              style={{
-                filter: darkHero ? 'brightness(0) invert(1)' : 'none',
-              }}
+              className="h-10 md:h-12 w-auto"
             />
           </Link>
 
@@ -75,15 +42,13 @@ export default function Navigation() {
                 href={item.href}
                 className="group relative font-mono text-[11px] tracking-[0.3em] uppercase"
               >
-                <span className={`mr-2 ${subtle} tabular-nums`}>
+                <span className="mr-2 text-travertine/60 tabular-nums">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 {item.label}
                 <span
-                  className={`absolute -bottom-2 left-0 right-0 h-px origin-left transition-transform duration-500 ease-exhale ${
-                    isActive(item.href)
-                      ? 'bg-golden-amber scale-x-100'
-                      : `${darkHero ? 'bg-travertine' : 'bg-pivot-black'} scale-x-0 group-hover:scale-x-100`
+                  className={`absolute -bottom-2 left-0 right-0 h-px origin-left bg-travertine transition-transform duration-500 ease-exhale ${
+                    isActive(item.href) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                   }`}
                 />
               </Link>
@@ -93,25 +58,19 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center gap-6">
             <a
               href="tel:407-488-5620"
-              className="font-mono text-[10px] tracking-[0.3em] uppercase hover:text-golden-amber transition-colors"
+              className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/80 hover:text-travertine transition-colors"
             >
               407 · 488 · 5620
             </a>
             <Link
               href="/contact"
-              className={`group relative inline-flex items-center gap-2 px-5 py-2.5 border font-mono text-[10px] tracking-[0.3em] uppercase overflow-hidden ${
-                darkHero ? 'border-travertine' : 'border-pivot-black'
-              }`}
+              className="group relative inline-flex items-center gap-2 px-5 py-2.5 border border-travertine font-mono text-[10px] tracking-[0.3em] uppercase overflow-hidden"
               data-cursor-hover
             >
-              <span className={`relative z-10 transition-colors duration-300 ${
-                darkHero ? 'group-hover:text-ink' : 'group-hover:text-travertine'
-              }`}>
+              <span className="relative z-10 transition-colors duration-300 group-hover:text-florida-oak">
                 Begin a Project
               </span>
-              <span className={`absolute inset-0 z-0 origin-left scale-x-0 transition-transform duration-500 ease-exhale group-hover:scale-x-100 ${
-                darkHero ? 'bg-travertine' : 'bg-pivot-black'
-              }`} />
+              <span className="absolute inset-0 z-0 origin-left scale-x-0 bg-travertine transition-transform duration-500 ease-exhale group-hover:scale-x-100" />
             </Link>
           </div>
 
@@ -122,14 +81,14 @@ export default function Navigation() {
             aria-label="Toggle menu"
           >
             <span
-              className={`block h-px w-6 transition-transform duration-300 ${
-                darkHero && !open ? 'bg-travertine' : 'bg-pivot-black'
-              } ${open ? 'translate-y-[3px] rotate-45' : ''}`}
+              className={`block h-px w-6 bg-travertine transition-transform duration-300 ${
+                open ? 'translate-y-[3px] rotate-45' : ''
+              }`}
             />
             <span
-              className={`block h-px w-6 transition-transform duration-300 ${
-                darkHero && !open ? 'bg-travertine' : 'bg-pivot-black'
-              } ${open ? '-translate-y-[3px] -rotate-45' : ''}`}
+              className={`block h-px w-6 bg-travertine transition-transform duration-300 ${
+                open ? '-translate-y-[3px] -rotate-45' : ''
+              }`}
             />
           </button>
         </div>
@@ -141,22 +100,21 @@ export default function Navigation() {
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        <div className="absolute inset-0 bg-travertine" />
-        <div className="absolute inset-0 grain animate-grain-shift opacity-50" />
-        <div className="relative h-full flex flex-col justify-between px-8 pt-28 pb-10">
+        <div className="absolute inset-0 bg-florida-oak" />
+        <div className="relative h-full flex flex-col justify-between px-8 pt-28 pb-10 text-travertine">
           <nav className="flex flex-col gap-6">
             {NAV.map((item, i) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group flex items-baseline gap-4 border-b border-concrete/20 pb-6"
+                className="group flex items-baseline gap-4 border-b border-travertine/20 pb-6"
               >
-                <span className="font-mono text-[10px] text-concrete tabular-nums">
+                <span className="font-mono text-[10px] text-travertine/60 tabular-nums">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <span
                   className={`font-display text-4xl font-light ${
-                    isActive(item.href) ? 'italic text-golden-amber' : 'text-pivot-black'
+                    isActive(item.href) ? 'italic' : ''
                   }`}
                 >
                   {item.label}
@@ -165,9 +123,9 @@ export default function Navigation() {
             ))}
           </nav>
 
-          <div className="flex flex-col gap-2 font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
-            <a href="tel:407-488-5620" className="text-pivot-black">407 · 488 · 5620</a>
-            <a href="mailto:admin@hiattdevelopment.com" className="text-pivot-black">
+          <div className="flex flex-col gap-2 font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/70">
+            <a href="tel:407-488-5620" className="text-travertine">407 · 488 · 5620</a>
+            <a href="mailto:admin@hiattdevelopment.com" className="text-travertine">
               admin@hiattdevelopment.com
             </a>
             <span>1453 W. Landstreet Rd, Ste 302 — Orlando FL</span>
