@@ -75,34 +75,17 @@ export default function HeroHome() {
 
   return (
     <section className="relative h-[100svh] w-full overflow-hidden bg-ink">
-      {/* Video with SVG displacement filter for subtle warp */}
-      <svg className="absolute inset-0 w-0 h-0" aria-hidden>
-        <filter id="hero-warp">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.008 0.012"
-            numOctaves="2"
-            seed="3"
-          >
-            <animate attributeName="baseFrequency" dur="40s" values="0.008 0.012;0.012 0.008;0.008 0.012" repeatCount="indefinite" />
-          </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" scale="14" />
-        </filter>
-      </svg>
-
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos-compressed/hero.mp4"
+        src="/videos-compressed/winter-park-bungalow.mp4"
         muted
         loop
         playsInline
         preload="auto"
-        style={{ filter: 'url(#hero-warp) brightness(0.85)' }}
       />
 
-      <div className="absolute inset-0 vignette pointer-events-none" />
-      <div className="absolute inset-0 bg-ink/15 pointer-events-none" />
+      <div className="absolute inset-0 bg-ink/35 pointer-events-none" />
 
       {/* Top eyebrow row */}
       <div className="relative z-10 grid grid-cols-2 md:grid-cols-3 items-start px-6 md:px-10 pt-28 md:pt-32">
@@ -192,19 +175,6 @@ export default function HeroHome() {
         <span className="block h-12 w-px bg-travertine/30 origin-top animate-scroll-hint" />
       </div>
 
-      {/* Marquee ticker */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 h-12 flex items-center bg-travertine/95 border-t border-concrete/20 overflow-hidden">
-        <div className="animate-marquee whitespace-nowrap flex">
-          {[...Array(4)].map((_, i) => (
-            <span
-              key={i}
-              className="font-mono text-[10px] tracking-[0.4em] uppercase text-concrete mx-10"
-            >
-              Orlando, FL · Established 2008 · 8th-Generation Floridian · Licensed &amp; Insured · Serving Central Florida ·
-            </span>
-          ))}
-        </div>
-      </div>
     </section>
   )
 }

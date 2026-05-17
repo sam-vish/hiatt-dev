@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const NAV = [
@@ -28,14 +27,11 @@ export default function Navigation() {
       <header className="fixed top-0 left-0 right-0 z-[70] bg-florida-oak text-travertine">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[88px]">
           <Link href="/" aria-label="Hiatt Development Co. — Home" className="group flex items-center gap-3">
-            <Image
-              src="/logos/Logo.avif"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logos/hdc-logo-white.svg"
               alt="Hiatt Development Co."
-              width={318}
-              height={158}
-              priority
-              className="h-12 md:h-14 w-auto"
-              style={{ filter: 'brightness(0) invert(1)' }}
+              className="h-10 md:h-12 w-auto"
             />
           </Link>
 

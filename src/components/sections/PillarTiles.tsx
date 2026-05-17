@@ -1,5 +1,6 @@
 'use client'
 
+import { useRef } from 'react'
 import Link from 'next/link'
 import Reveal from '@/components/motion/Reveal'
 import SplitHeading from '@/components/motion/SplitHeading'
@@ -39,20 +40,26 @@ export default function PillarTiles({ pillars }: { pillars: Pillar[] }) {
 }
 
 function Tile({ pillar }: { pillar: Pillar }) {
+  const videoRef = useRef<HTMLVideoElement>(null)
   return (
     <Link
       href={pillar.href}
       data-cursor-hover
       data-cursor-label="open"
+      onMouseEnter={() => videoRef.current?.play().catch(() => {})}
+      onMouseLeave={() => {
+        videoRef.current?.pause()
+        if (videoRef.current) videoRef.current.currentTime = 0
+      }}
       className="group relative bg-florida-oak overflow-hidden aspect-[3/4] md:aspect-auto md:h-[520px]"
     >
       <video
+        ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
         src={pillar.video}
         muted
         loop
         playsInline
-        autoPlay
         preload="metadata"
       />
       <div className="absolute inset-0 bg-florida-oak/55 group-hover:bg-florida-oak/35 transition-colors duration-700" />

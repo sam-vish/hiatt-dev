@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Reveal from '@/components/motion/Reveal'
 import { PILLARS } from '@/lib/data/services'
@@ -29,18 +28,6 @@ export default function PillarStack() {
           onLeave: () => panel.querySelector('video')?.pause(),
           onLeaveBack: () => panel.querySelector('video')?.pause(),
         })
-      )
-      const lines = panel.querySelectorAll('.line-anim')
-      gsap.fromTo(
-        lines,
-        { yPercent: 110 },
-        {
-          yPercent: 0,
-          stagger: 0.08,
-          duration: 1,
-          ease: 'expo.out',
-          scrollTrigger: { trigger: panel, start: 'top 75%', once: true },
-        }
       )
     })
     return () => triggers.forEach((t) => t.kill())
@@ -78,9 +65,7 @@ export default function PillarStack() {
                 — Pillar {p.num}
               </div>
               <h2 className="font-display font-light text-pivot-black text-balance text-[10vw] md:text-[4.5vw] leading-[0.95]">
-                <span className="block overflow-hidden">
-                  <span className="line-anim block">{p.name}</span>
-                </span>
+                {p.name}
               </h2>
               <p className="font-body text-base md:text-lg text-concrete leading-relaxed text-pretty max-w-[44ch]">
                 {p.blurb}
