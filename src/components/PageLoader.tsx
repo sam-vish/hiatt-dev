@@ -66,7 +66,7 @@ export default function PageLoader({ visible }: { visible: boolean }) {
         </div>
 
         <div className="flex flex-col items-center gap-3">
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-concrete">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-concrete">
             Hiatt Development Co.
           </div>
           <div className="relative h-px w-[220px] bg-concrete/20">
@@ -75,7 +75,7 @@ export default function PageLoader({ visible }: { visible: boolean }) {
               style={{ width: `${count}%`, transition: 'width 80ms linear' }}
             />
           </div>
-          <div className="font-mono text-[10px] tracking-[0.3em] text-pivot-black tabular-nums">
+          <div className="font-mono text-[12px] tracking-[0.24em] text-pivot-black tabular-nums">
             {String(count).padStart(3, '0')} / 100
           </div>
         </div>

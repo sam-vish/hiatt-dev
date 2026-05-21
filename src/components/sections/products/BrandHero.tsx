@@ -28,10 +28,10 @@ export default function BrandHero({ brand }: { brand: Brand }) {
 
           <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
             <div className="flex items-end justify-between gap-6">
-              <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-travertine/80">
+              <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/80">
                 — In situ · {brand.name}
               </div>
-              <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-travertine/80">
+              <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/80">
                 {brand.specs[0]?.value}
               </div>
             </div>

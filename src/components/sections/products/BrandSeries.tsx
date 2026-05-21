@@ -8,7 +8,7 @@ export default function BrandSeries({ brand }: { brand: Brand }) {
     <section className="relative bg-travertine-deep py-28 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <Reveal>
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
             — Series we install
           </div>
           <h2 className="font-display font-light text-pivot-black text-balance text-[10vw] md:text-[5vw] leading-[0.95] mb-16">
@@ -24,10 +24,10 @@ export default function BrandSeries({ brand }: { brand: Brand }) {
               className="group relative bg-travertine-deep p-8 md:p-12 flex flex-col gap-4 hover:bg-travertine transition-colors duration-500"
             >
               <div className="flex items-baseline justify-between">
-                <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete tabular-nums">
+                <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete tabular-nums">
                   / {String(i + 1).padStart(2, '0')}
                 </span>
-                <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+                <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
                   {brand.name}
                 </span>
               </div>

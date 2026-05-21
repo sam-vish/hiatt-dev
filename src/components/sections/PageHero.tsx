@@ -38,11 +38,11 @@ export default function PageHero({
         <div className="grid md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-8">
             <div className="flex items-center gap-4 mb-10">
-              <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber tabular-nums">
+              <span className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber tabular-nums">
                 — {pageNumber}
               </span>
               <span className="h-px w-16 bg-concrete/40" />
-              <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-concrete">
+              <span className="font-mono text-[12px] tracking-[0.32em] uppercase text-concrete">
                 {pageLabel}
               </span>
             </div>
@@ -70,7 +70,7 @@ export default function PageHero({
               </p>
             )}
             {meta.length > 0 && (
-              <ul className="mt-6 flex flex-col gap-1 font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+              <ul className="mt-6 flex flex-col gap-1 font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
                 {meta.map((m) => (
                   <li key={m} className="flex items-center gap-3">
                     <span className="h-px w-6 bg-concrete/40" />

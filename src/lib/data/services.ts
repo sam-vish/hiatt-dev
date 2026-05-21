@@ -20,7 +20,7 @@ export const PILLARS: Pillar[] = [
       'Historic-district sensitive installs',
       'New construction package management',
     ],
-    video: '/videos-compressed/custom-residential.mp4',
+    video: '/videos-compressed/lakenona-residence.mp4',
     href: '/services#residential',
   },
   {
@@ -34,7 +34,7 @@ export const PILLARS: Pillar[] = [
       'Phased and night-shift installs',
       'Code compliance and permitting',
     ],
-    video: '/videos-compressed/commercial.mp4',
+    video: '/videos-compressed/commercial_updated.mp4',
     href: '/services#commercial',
   },
   {
@@ -48,7 +48,7 @@ export const PILLARS: Pillar[] = [
       'Multi-track sliding and folding wall systems',
       'Pivot doors and custom millwork integration',
     ],
-    video: '/videos-compressed/oceanfront-euro-wall-installation.mp4',
+    video: '/videos-compressed/installation_updated.mp4',
     href: '/services#installation',
   },
 ]

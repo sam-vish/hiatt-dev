@@ -19,7 +19,7 @@ export default function PortfolioGrid({ projects }: { projects: Project[] }) {
     <section className="relative bg-travertine py-12 md:py-16">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="flex flex-wrap items-center gap-3 md:gap-6 mb-12">
-          <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+          <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
             — Filter
           </span>
           {FILTERS.map((f) => {
@@ -30,7 +30,7 @@ export default function PortfolioGrid({ projects }: { projects: Project[] }) {
                 type="button"
                 onClick={() => setFilter(f)}
                 data-cursor-hover
-                className={`font-mono text-[11px] tracking-[0.3em] uppercase px-4 py-2 border transition-colors duration-300 ${
+                className={`font-mono text-[13px] tracking-[0.24em] uppercase px-4 py-2 border transition-colors duration-300 ${
                   active
                     ? 'border-florida-oak bg-florida-oak text-travertine'
                     : 'border-concrete/40 text-pivot-black hover:border-florida-oak'
@@ -40,7 +40,7 @@ export default function PortfolioGrid({ projects }: { projects: Project[] }) {
               </button>
             )
           })}
-          <span className="ml-auto font-mono text-[10px] tracking-[0.3em] uppercase text-concrete tabular-nums">
+          <span className="ml-auto font-mono text-[12px] tracking-[0.24em] uppercase text-concrete tabular-nums">
             {visible.length.toString().padStart(2, '0')} / {projects.length.toString().padStart(2, '0')}
           </span>
         </div>
@@ -94,7 +94,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         />
         <div className="absolute inset-0 bg-ink/15 group-hover:bg-ink/40 transition-colors duration-500" />
         <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-8 text-travertine">
-          <div className="flex items-center justify-between font-mono text-[10px] tracking-[0.3em] uppercase">
+          <div className="flex items-center justify-between font-mono text-[12px] tracking-[0.24em] uppercase">
             <span>— {project.type}</span>
             <span className="tabular-nums">{project.year}</span>
           </div>
@@ -103,11 +103,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               <h3 className="font-display font-light text-2xl md:text-3xl leading-tight">
                 {project.title}
               </h3>
-              <div className="mt-1 font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/70">
+              <div className="mt-1 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/70">
                 {project.city}
               </div>
             </div>
-            <span className="font-mono text-[10px] tracking-[0.3em] uppercase translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-exhale">
+            <span className="font-mono text-[12px] tracking-[0.24em] uppercase translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-exhale">
               Read →
             </span>
           </div>

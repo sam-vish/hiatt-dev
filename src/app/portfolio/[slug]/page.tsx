@@ -38,7 +38,7 @@ export default async function ProjectPage({ params }: Props) {
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
             <Reveal>
-              <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+              <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
                 — Brief
               </div>
               <h2 className="font-display font-light text-pivot-black text-[10vw] md:text-[4vw] leading-[1] text-balance">
@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: Props) {
               <div className="grid sm:grid-cols-2 gap-px bg-concrete/30 border-y border-concrete/30">
                 {p.facts.map((f) => (
                   <div key={f.label} className="bg-travertine p-6 flex flex-col gap-2">
-                    <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+                    <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
                       — {f.label}
                     </span>
                     <span className="font-display font-light text-2xl md:text-3xl text-pivot-black tabular-nums">
@@ -74,7 +74,7 @@ export default async function ProjectPage({ params }: Props) {
       <section className="relative bg-ink text-travertine py-24 md:py-32">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 grid md:grid-cols-12 gap-10">
           <Reveal className="md:col-span-4">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
               — Scope
             </div>
             <h2 className="font-display font-light text-balance text-[10vw] md:text-[4vw] leading-[1]">
@@ -89,7 +89,7 @@ export default async function ProjectPage({ params }: Props) {
                   delay={i * 0.04}
                   className="grid grid-cols-12 items-center gap-6 py-6 border-b border-travertine/15"
                 >
-                  <span className="col-span-2 font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/50 tabular-nums">
+                  <span className="col-span-2 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/50 tabular-nums">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <span className="col-span-10 font-display font-light text-2xl md:text-3xl">
@@ -101,7 +101,7 @@ export default async function ProjectPage({ params }: Props) {
             <Reveal delay={0.2}>
               <div className="mt-10 flex flex-wrap gap-3">
                 {p.brands.map((b) => (
-                  <span key={b} className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine border border-travertine/40 px-3 py-2">
+                  <span key={b} className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine border border-travertine/40 px-3 py-2">
                     {b}
                   </span>
                 ))}
@@ -140,7 +140,7 @@ export default async function ProjectPage({ params }: Props) {
                   )}
                   <div className="absolute inset-0 bg-ink/10" />
                   {g.caption && (
-                    <figcaption className="absolute bottom-4 left-4 font-mono text-[10px] tracking-[0.3em] uppercase text-travertine">
+                    <figcaption className="absolute bottom-4 left-4 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine">
                       — {g.caption}
                     </figcaption>
                   )}
@@ -159,13 +159,13 @@ export default async function ProjectPage({ params }: Props) {
           data-cursor-label="next"
           className="group relative grid md:grid-cols-12 items-center gap-6 px-6 md:px-10 py-16 md:py-24"
         >
-          <span className="md:col-span-2 font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+          <span className="md:col-span-2 font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
             — Next project
           </span>
           <span className="md:col-span-7 font-display text-5xl md:text-7xl font-light text-pivot-black leading-none italic">
             {next.title}
           </span>
-          <span className="md:col-span-3 md:text-right font-mono text-[10px] tracking-[0.3em] uppercase text-pivot-black flex md:justify-end items-center gap-3">
+          <span className="md:col-span-3 md:text-right font-mono text-[12px] tracking-[0.24em] uppercase text-pivot-black flex md:justify-end items-center gap-3">
             <span className="h-px w-12 bg-florida-oak group-hover:bg-golden-amber transition-colors" />
             Read
             <span>→</span>

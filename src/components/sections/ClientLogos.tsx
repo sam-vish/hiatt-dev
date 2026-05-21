@@ -29,8 +29,8 @@ const DEFAULT_LOGOS: Logo[] = [
 ]
 
 export default function ClientLogos({
-  eyebrow = 'Companies we serve',
-  heading = 'Trusted across Central Florida.',
+  eyebrow = 'Suppliers we install',
+  heading = 'The brands behind every project.',
   logos = DEFAULT_LOGOS,
 }: Props) {
   return (
@@ -38,7 +38,7 @@ export default function ClientLogos({
       <div className="mx-auto max-w-[1600px]">
         <Reveal>
           <div className="flex flex-col items-center text-center gap-5 mb-14 md:mb-20 px-6 md:px-10">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-florida-oak">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-florida-oak">
               — {eyebrow}
             </div>
             <h2 className="font-display font-light text-pivot-black text-3xl md:text-4xl lg:text-5xl leading-tight max-w-[28ch] text-balance">
@@ -51,13 +51,13 @@ export default function ClientLogos({
           {logos.map((logo) => (
             <div
               key={logo.name}
-              className="flex h-24 md:h-28 w-44 md:w-56 items-center justify-center px-6 md:px-10 shrink-0"
+              className="flex h-32 md:h-40 w-56 md:w-72 items-center justify-center px-6 md:px-10 shrink-0"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="max-h-12 md:max-h-14 w-auto object-contain opacity-70 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
+                className="max-h-20 md:max-h-24 w-auto object-contain opacity-70 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
               />
             </div>
           ))}

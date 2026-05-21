@@ -7,7 +7,7 @@ export default function StoryBlock() {
     <section id="story" className="relative bg-travertine py-28 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 grid md:grid-cols-12 gap-10 md:gap-16">
         <div className="md:col-span-5 md:sticky md:top-32 self-start">
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
             — Founder
           </div>
           <Reveal>
@@ -25,7 +25,7 @@ export default function StoryBlock() {
               <div className="absolute inset-0 bg-florida-oak/15 mix-blend-multiply" />
               <div className="absolute inset-0 grain animate-grain-shift opacity-25" />
             </div>
-            <div className="mt-3 font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+            <div className="mt-3 font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
               Jason Hiatt · Founder
             </div>
           </div>
@@ -93,7 +93,7 @@ function Stat({ value, label }: { value: string; label: string }) {
       <div className="font-display font-light text-4xl md:text-5xl text-pivot-black tabular-nums">
         {value}
       </div>
-      <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+      <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
         — {label}
       </div>
     </div>

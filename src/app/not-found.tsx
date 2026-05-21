@@ -7,11 +7,11 @@ export default function NotFound() {
       <div className="relative z-10 mx-auto max-w-[1100px] w-full grid md:grid-cols-12 gap-10 items-end pt-32">
         <div className="md:col-span-7">
           <div className="flex items-center gap-4 mb-10">
-            <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber tabular-nums">
+            <span className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber tabular-nums">
               — 404
             </span>
             <span className="h-px w-20 bg-concrete/40" />
-            <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-concrete">
+            <span className="font-mono text-[12px] tracking-[0.32em] uppercase text-concrete">
               Off the schedule
             </span>
           </div>
@@ -33,7 +33,7 @@ export default function NotFound() {
             <Link
               key={l.href}
               href={l.href}
-              className="group inline-flex items-center gap-3 font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black hover:text-golden-amber transition-colors"
+              className="group inline-flex items-center gap-3 font-mono text-[13px] tracking-[0.24em] uppercase text-pivot-black hover:text-golden-amber transition-colors"
               data-cursor-hover
             >
               <span className="tabular-nums">{String(i + 1).padStart(2, '0')}</span>

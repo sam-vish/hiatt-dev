@@ -9,7 +9,7 @@ export default function PhilosophyGrid() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 items-end mb-16 md:mb-24">
           <Reveal className="md:col-span-7">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
               — Philosophy
             </div>
             <h2 className="font-display font-light text-balance text-[10vw] md:text-[5.5vw] leading-[0.95]">
@@ -23,7 +23,7 @@ export default function PhilosophyGrid() {
             <Reveal key={v.num} className="bg-travertine-deep p-10 md:p-12 flex flex-col gap-8 group">
               <div className="flex items-start justify-between">
                 <ValueIcon name={v.name} />
-                <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete tabular-nums">
+                <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete tabular-nums">
                   / {v.num}
                 </span>
               </div>

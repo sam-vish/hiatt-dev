@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     city: 'Lake Nona, FL',
     year: 2024,
     type: 'Residential',
-    cover: '/videos-compressed/lakenona-residence.mp4',
+    cover: '/videos-compressed/lakenona-updated.mp4',
     ratio: '3/4',
     brief:
       'New construction modern. SuperHouse slim-steel walls front and back, with a 12-foot pivot door at the entry that swings on a single floor bearing.',

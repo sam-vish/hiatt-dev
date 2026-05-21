@@ -60,7 +60,7 @@ export default function RouteCurtain({ pathname }: { pathname: string }) {
         />
         <div
           ref={labelRef}
-          className="font-mono text-[10px] tracking-[0.4em] uppercase text-ink/70"
+          className="font-mono text-[12px] tracking-[0.32em] uppercase text-ink/70"
         >
           {label}
         </div>

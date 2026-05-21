@@ -37,7 +37,7 @@ export default function ProcessSteps() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 items-end mb-20 md:mb-28">
           <Reveal className="md:col-span-7">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
               — Process
             </div>
             <h2 className="font-display font-light text-balance text-[10vw] md:text-[5.5vw] leading-[0.95]">
@@ -74,7 +74,7 @@ export default function ProcessSteps() {
                   }`}
                 />
                 <div className="pl-12 md:pl-0">
-                  <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/50 mb-4 tabular-nums">
+                  <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/50 mb-4 tabular-nums">
                     {step.num}
                   </div>
                   <h3 className="font-display font-light text-3xl md:text-4xl mb-4 leading-tight">

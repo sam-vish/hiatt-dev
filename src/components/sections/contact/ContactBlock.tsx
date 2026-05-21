@@ -36,7 +36,7 @@ export default function ContactBlock() {
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10 py-28 md:py-40 grid md:grid-cols-12 gap-16">
         <div className="md:col-span-5 flex flex-col gap-10">
           <Reveal>
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
               — Begin a project
             </div>
             <h2 className="font-display font-light text-balance text-[12vw] md:text-[5vw] leading-[0.95]">
@@ -49,7 +49,7 @@ export default function ContactBlock() {
               <InfoLine label="Studio" value="1453 W. Landstreet Rd, Ste 302" />
               <InfoLine label="City" value="Orlando, FL 32824" />
               <InfoLine label="Phone" value="407 · 488 · 5620" href="tel:407-488-5620" />
-              <InfoLine label="Email" value="admin@hiattdevelopment.com" href="mailto:admin@hiattdevelopment.com" />
+              <InfoLine label="Email" value="sales@hiattdevelopment.com" href="mailto:sales@hiattdevelopment.com" />
               <InfoLine label="Hours" value="Mon — Fri · 8a — 5p EST" />
             </div>
           </Reveal>
@@ -74,7 +74,7 @@ export default function ContactBlock() {
           <Reveal>
             {sent ? (
               <div className="bg-travertine text-pivot-black p-10 md:p-14">
-                <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+                <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
                   — Sent
                 </div>
                 <h3 className="font-display font-light text-3xl md:text-4xl leading-tight max-w-[20ch]">
@@ -87,7 +87,7 @@ export default function ContactBlock() {
               </div>
             ) : (
               <form onSubmit={onSubmit} className="bg-travertine text-pivot-black p-10 md:p-14 flex flex-col gap-8">
-                <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber">
+                <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber">
                   — Request
                 </div>
                 <Field label="Name" id="name" focused={field === 'name'} setFocus={setField} required />
@@ -96,7 +96,7 @@ export default function ContactBlock() {
                 <Field label="City / Project address" id="city" focused={field === 'city'} setFocus={setField} />
 
                 <div className="flex flex-col gap-3">
-                  <label htmlFor="type" className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+                  <label htmlFor="type" className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
                     — Project type
                   </label>
                   <select
@@ -115,7 +115,7 @@ export default function ContactBlock() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <label htmlFor="message" className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+                  <label htmlFor="message" className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
                     — Tell us about it
                   </label>
                   <textarea
@@ -132,7 +132,7 @@ export default function ContactBlock() {
                 <button
                   type="submit"
                   data-cursor-hover
-                  className="group relative inline-flex items-center justify-between gap-3 px-6 py-4 border border-florida-oak font-mono text-[11px] tracking-[0.3em] uppercase text-pivot-black overflow-hidden mt-4"
+                  className="group relative inline-flex items-center justify-between gap-3 px-6 py-4 border border-florida-oak font-mono text-[13px] tracking-[0.24em] uppercase text-pivot-black overflow-hidden mt-4"
                 >
                   <span className="relative z-10 transition-colors duration-500 group-hover:text-travertine">
                     Send the request
@@ -168,7 +168,7 @@ function Field({
 }) {
   return (
     <div className="flex flex-col gap-3">
-      <label htmlFor={id} className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete flex items-center gap-3">
+      <label htmlFor={id} className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete flex items-center gap-3">
         <span className="h-px w-6 bg-concrete/40" />
         {label}
         {required && <span className="text-golden-amber">*</span>}
@@ -193,7 +193,7 @@ function Field({
 function InfoLine({ label, value, href }: { label: string; value: string; href?: string }) {
   const inner = (
     <div className="grid grid-cols-12 items-baseline gap-4 py-3 border-b border-travertine/15">
-      <span className="col-span-3 font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/50">
+      <span className="col-span-3 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/50">
         — {label}
       </span>
       <span className="col-span-9 font-display font-light text-xl md:text-2xl">

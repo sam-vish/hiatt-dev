@@ -9,7 +9,7 @@ export default function BrandRoster({ brands, eyebrow = 'Trusted partners', head
     <section className="relative bg-ink text-travertine py-20 md:py-28 overflow-hidden">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <Reveal>
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber">
             — {eyebrow}
           </div>
         </Reveal>
@@ -28,13 +28,13 @@ export default function BrandRoster({ brands, eyebrow = 'Trusted partners', head
               data-cursor-label="open"
               className="group relative grid grid-cols-12 items-center gap-6 py-5 md:py-6 px-2 transition-colors duration-500 hover:bg-travertine hover:text-ink"
             >
-              <span className="col-span-2 md:col-span-1 font-mono text-[10px] tracking-[0.3em] tabular-nums text-travertine/50 group-hover:text-ink/50">
+              <span className="col-span-2 md:col-span-1 font-mono text-[12px] tracking-[0.24em] tabular-nums text-travertine/50 group-hover:text-ink/50">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <div className="col-span-8 md:col-span-9 font-display text-2xl md:text-3xl font-light leading-none">
                 {b.name}
               </div>
-              <div className="col-span-2 flex justify-end items-center gap-2 font-mono text-[10px] tracking-[0.3em] uppercase">
+              <div className="col-span-2 flex justify-end items-center gap-2 font-mono text-[12px] tracking-[0.24em] uppercase">
                 <span className="h-px w-6 md:w-10 bg-travertine/40 group-hover:bg-golden-amber transition-colors" />
                 <span>↗</span>
               </div>

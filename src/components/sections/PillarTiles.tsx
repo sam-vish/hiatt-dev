@@ -18,7 +18,7 @@ export default function PillarTiles({ pillars }: { pillars: Pillar[] }) {
     <section className="relative bg-travertine py-28 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <Reveal>
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-concrete mb-6">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-concrete mb-6">
             — What we do
           </div>
         </Reveal>
@@ -66,10 +66,10 @@ function Tile({ pillar }: { pillar: Pillar }) {
 
       <div className="relative z-10 h-full p-8 flex flex-col justify-between text-travertine">
         <div className="flex items-baseline justify-between">
-          <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-travertine/80">
+          <span className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/80">
             — Pillar {pillar.num}
           </span>
-          <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-travertine/70">
+          <span className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/70">
             ↗
           </span>
         </div>
@@ -82,7 +82,7 @@ function Tile({ pillar }: { pillar: Pillar }) {
             {pillar.blurb}
           </p>
           <div className="flex items-center gap-3">
-            <span className="font-mono text-[10px] tracking-[0.4em] uppercase">
+            <span className="font-mono text-[12px] tracking-[0.32em] uppercase">
               Explore
             </span>
             <span className="h-px w-10 bg-travertine/70 group-hover:w-16 transition-all duration-500" />

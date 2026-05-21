@@ -24,7 +24,7 @@ export default function CapabilitiesGrid() {
     <section className="relative bg-travertine py-28 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <Reveal>
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-8">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-8">
             — Capabilities
           </div>
         </Reveal>
@@ -38,7 +38,7 @@ export default function CapabilitiesGrid() {
             const cellClass = 'bg-travertine p-6 md:p-8 flex flex-col gap-3 group hover:bg-travertine-deep transition-colors duration-500'
             const inner = (
               <>
-                <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete tabular-nums">
+                <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete tabular-nums">
                   / {c.num}
                 </span>
                 <span className="font-display font-light text-xl md:text-2xl text-pivot-black leading-snug group-hover:italic transition-all">

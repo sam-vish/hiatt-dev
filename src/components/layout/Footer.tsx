@@ -53,7 +53,7 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 grid gap-16 md:grid-cols-12">
         <div className="md:col-span-5 flex flex-col gap-8">
-          <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber">
             — Begin a project
           </div>
           <h2 className="font-display text-4xl md:text-6xl font-light text-balance">
@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="md:col-span-7 grid gap-10 sm:grid-cols-3">
           {COLUMNS.map((col) => (
             <div key={col.label} className="flex flex-col gap-4">
-              <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-travertine/50">
+              <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/50">
                 — {col.label}
               </div>
               <ul className="flex flex-col gap-2">
@@ -98,13 +98,13 @@ export default function Footer() {
       </div>
 
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10 pb-10 grid gap-6 md:grid-cols-3 border-t border-travertine/15 pt-8">
-        <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/60">
+        <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/60">
           © 2025 Hiatt Development Company
         </div>
-        <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/60 md:text-center">
+        <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/60 md:text-center">
           Licensed &nbsp;·&nbsp; Insured &nbsp;·&nbsp; CGC1521543
         </div>
-        <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/60 md:text-right">
+        <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/60 md:text-right">
           <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="hover:text-golden-amber">Instagram</a>
           <span className="mx-3 text-travertine/30">·</span>
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="hover:text-golden-amber">Facebook</a>

@@ -40,7 +40,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative font-mono text-[11px] tracking-[0.3em] uppercase"
+                className="group relative font-mono text-[13px] tracking-[0.24em] uppercase"
               >
                 <span className="mr-2 text-travertine/60 tabular-nums">
                   {String(i + 1).padStart(2, '0')}
@@ -58,13 +58,13 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center gap-6">
             <a
               href="tel:407-488-5620"
-              className="font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/80 hover:text-travertine transition-colors"
+              className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/80 hover:text-travertine transition-colors"
             >
               407 · 488 · 5620
             </a>
             <Link
               href="/contact"
-              className="group relative inline-flex items-center gap-2 px-5 py-2.5 border border-travertine font-mono text-[10px] tracking-[0.3em] uppercase overflow-hidden"
+              className="group relative inline-flex items-center gap-2 px-5 py-2.5 border border-travertine font-mono text-[12px] tracking-[0.24em] uppercase overflow-hidden"
               data-cursor-hover
             >
               <span className="relative z-10 transition-colors duration-300 group-hover:text-florida-oak">
@@ -123,10 +123,10 @@ export default function Navigation() {
             ))}
           </nav>
 
-          <div className="flex flex-col gap-2 font-mono text-[10px] tracking-[0.3em] uppercase text-travertine/70">
+          <div className="flex flex-col gap-2 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/70">
             <a href="tel:407-488-5620" className="text-travertine">407 · 488 · 5620</a>
-            <a href="mailto:admin@hiattdevelopment.com" className="text-travertine">
-              admin@hiattdevelopment.com
+            <a href="mailto:sales@hiattdevelopment.com" className="text-travertine">
+              sales@hiattdevelopment.com
             </a>
             <span>1453 W. Landstreet Rd, Ste 302 — Orlando FL</span>
           </div>

@@ -9,7 +9,7 @@ export default function TeamGrid() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="grid md:grid-cols-12 items-end gap-10 mb-16 md:mb-24">
           <Reveal className="md:col-span-7">
-            <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber mb-6">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
               — The crew
             </div>
             <h2 className="font-display font-light text-balance text-[10vw] md:text-[5.5vw] leading-[0.95]">
@@ -51,11 +51,11 @@ export default function TeamGrid() {
                   <h3 className="font-display font-light text-3xl md:text-4xl text-pivot-black leading-tight">
                     {m.name}
                   </h3>
-                  <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete tabular-nums">
+                  <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete tabular-nums">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                 </div>
-                <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-golden-amber">
+                <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-golden-amber">
                   {m.role}
                 </div>
                 {i === 0 && (

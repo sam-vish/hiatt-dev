@@ -46,7 +46,7 @@ function BrandRow({ brand, index }: { brand: Brand; index: number }) {
           />
           <div className="absolute inset-0 bg-ink/15 group-hover:bg-ink/0 transition-colors duration-700" />
           <div className="absolute inset-0 grain animate-grain-shift opacity-15" />
-          <div className="absolute top-6 left-6 font-mono text-[10px] tracking-[0.4em] uppercase text-travertine">
+          <div className="absolute top-6 left-6 font-mono text-[12px] tracking-[0.32em] uppercase text-travertine">
             — Brand {String(index + 1).padStart(2, '0')}
           </div>
         </div>
@@ -54,7 +54,7 @@ function BrandRow({ brand, index }: { brand: Brand; index: number }) {
       <div className={`md:col-span-5 flex flex-col justify-between p-8 md:p-12 ${index % 2 === 1 ? 'md:order-1' : ''}`}>
         <div className="flex items-center gap-3">
           <span className="h-px w-10 bg-concrete/40" />
-          <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-concrete">
+          <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
             Manufacturer partner
           </span>
         </div>
@@ -69,7 +69,7 @@ function BrandRow({ brand, index }: { brand: Brand; index: number }) {
             {brand.blurb}
           </p>
         </div>
-        <div className="flex items-center gap-3 font-mono text-[10px] tracking-[0.3em] uppercase text-pivot-black group-hover:text-golden-amber transition-colors">
+        <div className="flex items-center gap-3 font-mono text-[12px] tracking-[0.24em] uppercase text-pivot-black group-hover:text-golden-amber transition-colors">
           <span>Open the spec</span>
           <span className="h-px w-10 bg-florida-oak group-hover:bg-golden-amber transition-colors" />
           <span>↗</span>

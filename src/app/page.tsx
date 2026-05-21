@@ -17,9 +17,9 @@ export default function HomePage() {
       <StatementBlock
         eyebrow="The practice"
         body={
-          'We don’t sell windows. We install conviction. Every opening surveyed by hand. Every fastener pull-tested. Every threshold detailed for a building that has to live in Florida weather, for a long time.'
+          'The only window and door installer in Central Florida that is also a licensed general contractor. Hiatt Development Company brings full permitting, project oversight, and 15+ years of high-end work on Isleworth, Golden Oak, and Winter Park builds — held to a standard that only a GC-licensed firm can deliver.'
         }
-        emphasis="Custom windows & doors, installed with conviction."
+        emphasis="GC-licensed. Custom windows and doors, installed."
       />
 
       <ClientLogos />
@@ -37,7 +37,7 @@ export default function HomePage() {
       <BrandRoster
         brands={BRANDS}
         eyebrow="Manufacturer partners"
-        heading="Specified across four houses."
+        heading="The brands we install."
       />
 
       <PortfolioStrip projects={PROJECTS} />

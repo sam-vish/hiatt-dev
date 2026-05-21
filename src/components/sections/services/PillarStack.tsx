@@ -54,14 +54,14 @@ export default function PillarStack() {
                 />
                 <div className="absolute inset-0 bg-ink/15" />
                 <div className="absolute inset-0 grain animate-grain-shift opacity-15" />
-                <div className="absolute top-6 left-6 font-mono text-[10px] tracking-[0.4em] uppercase text-travertine">
+                <div className="absolute top-6 left-6 font-mono text-[12px] tracking-[0.32em] uppercase text-travertine">
                   — {p.num}
                 </div>
               </div>
             </div>
 
             <div className={`md:col-span-5 flex flex-col gap-8 md:py-12 ${i % 2 === 1 ? 'md:order-1' : ''}`}>
-              <div className="font-mono text-[10px] tracking-[0.4em] uppercase text-golden-amber">
+              <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber">
                 — Pillar {p.num}
               </div>
               <h2 className="font-display font-light text-pivot-black text-balance text-[10vw] md:text-[4.5vw] leading-[0.95]">
@@ -74,7 +74,7 @@ export default function PillarStack() {
                 <ul className="mt-2 flex flex-col divide-y divide-concrete/20 border-y border-concrete/20">
                   {p.details.map((d) => (
                     <li key={d} className="py-3 flex items-center gap-4 font-body text-sm text-pivot-black">
-                      <span className="font-mono text-[10px] tracking-[0.3em] text-concrete">—</span>
+                      <span className="font-mono text-[12px] tracking-[0.24em] text-concrete">—</span>
                       {d}
                     </li>
                   ))}
