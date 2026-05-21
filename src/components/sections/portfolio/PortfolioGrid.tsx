@@ -107,7 +107,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </span>
           </div>
         </div>
-        <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-golden-amber group-hover:scale-x-100 transition-transform duration-700 ease-exhale" />
+        <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-travertine group-hover:scale-x-100 transition-transform duration-700 ease-exhale" />
       </Link>
     </Reveal>
   )

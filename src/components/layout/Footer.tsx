@@ -43,17 +43,17 @@ export default function Footer() {
       <div className="relative border-y border-travertine/15 py-6">
         <Marquee speed={45} className="font-display text-[10vw] md:text-[7vw] italic font-light tracking-tight leading-none">
           <span className="px-8">Built in Orlando</span>
-          <span className="px-8 text-golden-amber">·</span>
+          <span className="px-8 text-travertine/40">·</span>
           <span className="px-8">Installed across Central Florida</span>
-          <span className="px-8 text-golden-amber">·</span>
+          <span className="px-8 text-travertine/40">·</span>
           <span className="px-8 not-italic font-normal">EST. 2008</span>
-          <span className="px-8 text-golden-amber">·</span>
+          <span className="px-8 text-travertine/40">·</span>
         </Marquee>
       </div>
 
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10 py-20 md:py-28 grid gap-16 md:grid-cols-12">
         <div className="md:col-span-5 flex flex-col gap-8">
-          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber">
+          <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/50">
             — Begin a project
           </div>
           <h2 className="font-display text-4xl md:text-6xl font-light text-balance">
@@ -68,7 +68,7 @@ export default function Footer() {
           >
             <span className="font-mono text-xs tracking-[0.3em] uppercase">Start the conversation</span>
             <span className="relative h-px w-16 bg-travertine/40 overflow-hidden">
-              <span className="absolute inset-0 bg-golden-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-exhale" />
+              <span className="absolute inset-0 bg-travertine origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-exhale" />
             </span>
             <span className="font-mono text-xs">→</span>
           </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
                   <li key={it.href}>
                     <Link
                       href={it.href}
-                      className="font-display text-xl font-light hover:italic hover:text-golden-amber transition-colors"
+                      className="font-display text-xl font-light text-travertine/80 hover:text-travertine hover:italic transition-colors"
                     >
                       {it.label}
                     </Link>
@@ -105,11 +105,11 @@ export default function Footer() {
           Licensed &nbsp;·&nbsp; Insured &nbsp;·&nbsp; CGC1521543
         </div>
         <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/60 md:text-right">
-          <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="hover:text-golden-amber">Instagram</a>
+          <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="hover:text-travertine">Instagram</a>
           <span className="mx-3 text-travertine/30">·</span>
-          <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="hover:text-golden-amber">Facebook</a>
+          <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="hover:text-travertine">Facebook</a>
           <span className="mx-3 text-travertine/30">·</span>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="hover:text-golden-amber">LinkedIn</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="hover:text-travertine">LinkedIn</a>
         </div>
       </div>
     </footer>
