@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     city: 'Windermere, FL',
     year: 2024,
     type: 'Residential',
-    cover: '/videos-compressed/isleworth-residence.mp4',
+    cover: '/portfolio-stills/isleworth.webp',
     ratio: '4/3',
     brief:
       'A whole-house glazing replacement on a Mediterranean-revival estate. Forty-two openings, six folding walls, one continuous threshold from kitchen to lanai.',
@@ -122,7 +122,7 @@ export const PROJECTS: Project[] = [
     city: 'Baldwin Park, FL',
     year: 2023,
     type: 'Residential',
-    cover: '/videos-compressed/baldwin-park-renovation.mp4',
+    cover: '/portfolio-stills/baldwin-park.webp',
     ratio: '3/4',
     brief:
       'A whole-back-of-house openness. Two folding walls and a kitchen pass-through replaced what used to be three small windows.',
@@ -141,7 +141,7 @@ export const PROJECTS: Project[] = [
     city: 'Cocoa Beach, FL',
     year: 2022,
     type: 'Residential',
-    cover: '/videos-compressed/cocoa-beach-coastal-home.mp4',
+    cover: '/portfolio-stills/cocoa-beach.webp',
     ratio: '4/3',
     brief:
       'Direct ocean exposure. Every assembly tested to Large Missile, Level D, with hardware specified for salt-air longevity.',

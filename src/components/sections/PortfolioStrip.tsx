@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Reveal from '@/components/motion/Reveal'
 import type { Project } from '@/lib/data/projects'
 
+const isVideo = (src: string) => /\.(mp4|webm|mov)$/i.test(src)
+
 export default function PortfolioStrip({ projects }: { projects: Project[] }) {
   return (
     <section className="relative bg-travertine py-28 md:py-40">
@@ -32,7 +34,7 @@ export default function PortfolioStrip({ projects }: { projects: Project[] }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-concrete/30">
-          {projects.slice(0, 4).map((p) => (
+          {projects.slice(0, 6).map((p) => (
             <PortfolioCard key={p.slug} project={p} />
           ))}
         </div>
@@ -52,20 +54,32 @@ export default function PortfolioStrip({ projects }: { projects: Project[] }) {
 }
 
 function PortfolioCard({ project }: { project: Project }) {
+  const showVideo = isVideo(project.cover)
   return (
     <Link
       href={`/portfolio/${project.slug}`}
       data-cursor-hover
       data-cursor-label="open"
-      className="group relative bg-travertine aspect-[4/3] overflow-hidden"
+      className="group relative bg-ink aspect-video overflow-hidden"
     >
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src={project.cover}
-        muted
-        playsInline
-        preload="metadata"
-      />
+      {showVideo ? (
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={project.cover}
+          muted
+          loop
+          autoPlay
+          playsInline
+          preload="metadata"
+        />
+      ) : (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src={project.cover}
+          alt={project.title}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
       <div className="absolute inset-0 bg-ink/15 group-hover:bg-ink/35 transition-colors duration-500" />
       <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-8 text-travertine">
         <div className="flex items-center justify-between font-mono text-[12px] tracking-[0.24em] uppercase">

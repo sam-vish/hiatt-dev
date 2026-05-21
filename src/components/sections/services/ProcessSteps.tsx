@@ -37,11 +37,11 @@ export default function ProcessSteps() {
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 items-end mb-20 md:mb-28">
           <Reveal className="md:col-span-7">
-            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-golden-amber mb-6">
+            <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/70 mb-6">
               — Process
             </div>
             <h2 className="font-display font-light text-balance text-[10vw] md:text-[5.5vw] leading-[0.95]">
-              Six steps. <em className="italic text-golden-amber">No surprises.</em>
+              Six steps. <em className="italic text-travertine">No surprises.</em>
             </h2>
           </Reveal>
           <Reveal className="md:col-span-4 md:col-start-9" delay={0.1}>
@@ -55,7 +55,7 @@ export default function ProcessSteps() {
         <div className="relative grid md:grid-cols-12 gap-px">
           <div
             ref={lineRef}
-            className="absolute left-6 md:left-1/2 -translate-x-px top-0 w-px bottom-0 bg-golden-amber origin-top"
+            className="absolute left-6 md:left-1/2 -translate-x-px top-0 w-px bottom-0 bg-travertine origin-top"
           />
 
           {PROCESS.map((step, i) => (
@@ -67,7 +67,7 @@ export default function ProcessSteps() {
             >
               <Reveal delay={i * 0.04}>
                 <div
-                  className={`absolute top-1 left-[19px] h-2.5 w-2.5 rounded-full bg-golden-amber z-10 ${
+                  className={`absolute top-1 left-[19px] h-2.5 w-2.5 rounded-full bg-travertine z-10 ${
                     i % 2 === 0
                       ? 'md:left-auto md:right-[-5px]'
                       : 'md:left-[-5px]'

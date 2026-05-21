@@ -9,7 +9,7 @@ const NAV = [
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/products', label: 'Products' },
-  { href: '/portfolio', label: 'Work' },
+  { href: '/portfolio', label: 'Portfolio' },
   { href: '/contact', label: 'Contact' },
 ]
 
@@ -35,12 +35,12 @@ export default function Navigation() {
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
             {NAV.map((item, i) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative font-mono text-[13px] tracking-[0.24em] uppercase"
+                className="group relative font-mono text-[13px] tracking-[0.24em] uppercase whitespace-nowrap"
               >
                 <span className="mr-2 text-travertine/60 tabular-nums">
                   {String(i + 1).padStart(2, '0')}
@@ -55,16 +55,16 @@ export default function Navigation() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             <a
               href="tel:407-488-5620"
-              className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/80 hover:text-travertine transition-colors"
+              className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/80 hover:text-travertine transition-colors whitespace-nowrap"
             >
               407 · 488 · 5620
             </a>
             <Link
               href="/contact"
-              className="group relative inline-flex items-center gap-2 px-5 py-2.5 border border-travertine font-mono text-[12px] tracking-[0.24em] uppercase overflow-hidden"
+              className="group relative inline-flex items-center gap-2 px-5 py-2.5 border border-travertine font-mono text-[12px] tracking-[0.24em] uppercase overflow-hidden whitespace-nowrap"
               data-cursor-hover
             >
               <span className="relative z-10 transition-colors duration-300 group-hover:text-florida-oak">

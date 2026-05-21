@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useRef, useState } from 'react'
+import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import Reveal from '@/components/motion/Reveal'
 import type { Project } from '@/lib/data/projects'
@@ -54,19 +54,12 @@ export default function PortfolioGrid({ projects }: { projects: Project[] }) {
     </section>
   )
 }
+const isVideo = (src: string) => /\.(mp4|webm|mov)$/i.test(src)
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const span = (() => {
-    const order = index % 6
-    if (order === 0) return 'col-span-12 md:col-span-8'
-    if (order === 1) return 'col-span-12 md:col-span-4'
-    if (order === 2) return 'col-span-12 md:col-span-5'
-    if (order === 3) return 'col-span-12 md:col-span-7'
-    if (order === 4) return 'col-span-12 md:col-span-6'
-    return 'col-span-12 md:col-span-6'
-  })()
-  const aspect = project.ratio === '3/4' ? 'aspect-[3/4]' : project.ratio === '16/9' ? 'aspect-video' : 'aspect-[4/3]'
+  const showVideo = isVideo(project.cover)
+  const span = 'col-span-12 md:col-span-6'
+  const aspect = 'aspect-[4/3]'
 
   return (
     <Reveal delay={index * 0.04} className={span}>
@@ -74,24 +67,26 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         href={`/portfolio/${project.slug}`}
         data-cursor-hover
         data-cursor-label="open"
-        onMouseEnter={() => videoRef.current?.play().catch(() => {})}
-        onMouseLeave={() => {
-          if (videoRef.current) {
-            videoRef.current.pause()
-            videoRef.current.currentTime = 0
-          }
-        }}
         className={`group relative block ${aspect} overflow-hidden bg-ink`}
       >
-        <video
-          ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover scale-[1.02] group-hover:scale-100 transition-transform duration-1000 ease-exhale"
-          src={project.cover}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-        />
+        {showVideo ? (
+          <video
+            className="absolute inset-0 h-full w-full object-cover scale-[1.02] group-hover:scale-100 transition-transform duration-1000 ease-exhale"
+            src={project.cover}
+            muted
+            loop
+            autoPlay
+            playsInline
+            preload="metadata"
+          />
+        ) : (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            className="absolute inset-0 h-full w-full object-cover scale-[1.02] group-hover:scale-100 transition-transform duration-1000 ease-exhale"
+            src={project.cover}
+            alt={project.title}
+          />
+        )}
         <div className="absolute inset-0 bg-ink/15 group-hover:bg-ink/40 transition-colors duration-500" />
         <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-8 text-travertine">
           <div className="flex items-center justify-between font-mono text-[12px] tracking-[0.24em] uppercase">
