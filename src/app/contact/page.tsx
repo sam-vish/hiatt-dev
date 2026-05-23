@@ -12,12 +12,12 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        pageNumber="06"
+        pageNumber="07"
         pageLabel="Contact"
         title="Begin a"
         italicTitle="conversation."
         intro="Tell us about the opening, the building, the timeline, or just the idea. We pick up the phone and we read every form."
-        meta={['Orlando, FL', 'Mon — Fri · 8a — 5p EST', '407 · 488 · 5620']}
+        meta={['Orlando, FL', 'Mon — Fri · 8a — 4p EST', '407 · 488 · 5620']}
       />
       <ContactBlock />
     </>

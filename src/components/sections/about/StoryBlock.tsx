@@ -33,52 +33,25 @@ export default function StoryBlock() {
 
         <div className="md:col-span-7 flex flex-col gap-10 md:pt-20">
           <Reveal>
-            <p className="font-display italic font-light text-pivot-black text-3xl md:text-4xl leading-[1.2] text-balance">
-              &ldquo;Eight generations on the same coast. The trade was never the
-              point — the work was.&rdquo;
+            <p className="font-display italic font-light text-concrete text-3xl md:text-4xl leading-[1.2] text-balance">
+              Founder bio — TBD.
             </p>
           </Reveal>
 
-          <div className="flex flex-col gap-6 max-w-[60ch] font-body text-base md:text-lg text-pivot-black leading-relaxed text-pretty">
+          <div className="flex flex-col gap-6 max-w-[60ch] font-body text-base md:text-lg text-concrete leading-relaxed text-pretty">
             <Reveal delay={0.05}>
               <p>
-                Jason grew up around construction. Saturdays were spent on
-                jobsites with his father — the smell of cut pine and wet stucco,
-                a thermos of coffee on the tailgate. The trade was never spoken
-                about with reverence. It was just what the family did.
-              </p>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <p>
-                After high school he apprenticed under Derrick Koger, learning
-                the difference between framing a wall and framing it well.
-                Derrick had a phrase he repeated when something was off by an
-                eighth of an inch: <em>&ldquo;Make it look like you meant it.&rdquo;</em>
-              </p>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <p>
-                In 2008, in the middle of a recession, Jason set out on his
-                own. The work came in slowly — referral by referral, project by
-                project — from architects and builders who recognized the
-                difference between a window company and a craftsman.
-              </p>
-            </Reveal>
-            <Reveal delay={0.2}>
-              <p>
-                The team that has gathered around him since has been built the
-                same way. Hudson, Domingo, Jonathan, Juli — all of them are
-                here because they care about the trim line and the sealant
-                bead. None of them are here because of a job board.
+                A revised bio for Jason is in progress and will be published
+                here shortly.
               </p>
             </Reveal>
           </div>
 
-          <Reveal delay={0.25}>
+          <Reveal delay={0.15}>
             <div className="mt-6 grid grid-cols-3 gap-6 border-y border-concrete/30 py-8">
               <Stat value="8th" label="Generation Floridian" />
               <Stat value="2008" label="Founded in Orlando" />
-              <Stat value="14yr" label="Median crew tenure" />
+              <Stat value="GC" label="Licensed · CGC1521543" />
             </div>
           </Reveal>
         </div>

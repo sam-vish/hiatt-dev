@@ -1,6 +1,5 @@
 'use client'
 
-import { useRef } from 'react'
 import Link from 'next/link'
 import Reveal from '@/components/motion/Reveal'
 import SplitHeading from '@/components/motion/SplitHeading'
@@ -26,7 +25,7 @@ export default function PillarTiles({ pillars }: { pillars: Pillar[] }) {
           as="h2"
           className="font-display font-light text-pivot-black text-balance text-[10vw] md:text-[6vw] leading-[0.95] mb-20"
         >
-          {`Three rooms of one practice.`}
+          {`Three disciplines. One standard.`}
         </SplitHeading>
 
         <div className="grid gap-px bg-concrete/30 border-y border-concrete/30 md:grid-cols-3">
@@ -40,25 +39,17 @@ export default function PillarTiles({ pillars }: { pillars: Pillar[] }) {
 }
 
 function Tile({ pillar }: { pillar: Pillar }) {
-  const videoRef = useRef<HTMLVideoElement>(null)
   return (
     <Link
       href={pillar.href}
       data-cursor-hover
       data-cursor-label="open"
-      onMouseEnter={() => videoRef.current?.play().catch(() => {})}
-      onMouseLeave={() => {
-        videoRef.current?.pause()
-        if (videoRef.current) videoRef.current.currentTime = 0
-      }}
       className="group relative bg-florida-oak overflow-hidden aspect-[3/4] md:aspect-auto md:h-[520px]"
     >
       <video
-        ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
         src={pillar.video}
         muted
-        loop
         playsInline
         preload="metadata"
       />

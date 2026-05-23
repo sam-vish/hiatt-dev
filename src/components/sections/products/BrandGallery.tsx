@@ -33,17 +33,28 @@ function BrandRow({ brand, index }: { brand: Brand; index: number }) {
       }}
       className="group relative grid md:grid-cols-12 items-stretch gap-0 bg-travertine min-h-[60vh]"
     >
-      <Reveal className={`md:col-span-7 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
+      <Reveal className={`md:col-span-7 min-w-0 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
         <div className="relative h-[40vh] md:h-full overflow-hidden bg-ink">
-          <video
-            ref={videoRef}
-            className="absolute inset-0 h-full w-full object-cover scale-[1.04] group-hover:scale-100 transition-transform duration-1000 ease-exhale"
-            src={brand.video}
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          />
+          {brand.video ? (
+            <video
+              ref={videoRef}
+              className={`absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-exhale ${
+                brand.videoScale === undefined ? 'scale-[1.04] group-hover:scale-100' : ''
+              }`}
+              style={brand.videoScale !== undefined ? { transform: `scale(${brand.videoScale})` } : undefined}
+              src={brand.video}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="font-mono text-[11px] tracking-[0.32em] uppercase text-travertine/50">
+                Video coming soon
+              </span>
+            </div>
+          )}
           <div className="absolute inset-0 bg-ink/15 group-hover:bg-ink/0 transition-colors duration-700" />
           <div className="absolute inset-0 grain animate-grain-shift opacity-15" />
           <div className="absolute top-6 left-6 font-mono text-[12px] tracking-[0.32em] uppercase text-travertine">
@@ -51,18 +62,18 @@ function BrandRow({ brand, index }: { brand: Brand; index: number }) {
           </div>
         </div>
       </Reveal>
-      <div className={`md:col-span-5 flex flex-col justify-between p-8 md:p-12 ${index % 2 === 1 ? 'md:order-1' : ''}`}>
+      <div className={`md:col-span-5 min-w-0 flex flex-col justify-between p-8 md:p-12 ${index % 2 === 1 ? 'md:order-1' : ''}`}>
         <div className="flex items-center gap-3">
           <span className="h-px w-10 bg-concrete/40" />
           <span className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
             Manufacturer partner
           </span>
         </div>
-        <div className="flex flex-col gap-6 my-12">
-          <h2 className="font-display font-light text-pivot-black text-[14vw] md:text-[7vw] leading-[0.9]">
+        <div className="flex flex-col gap-6 my-12 min-w-0">
+          <h2 className="font-display font-light text-pivot-black leading-[0.9] break-words text-[clamp(2.5rem,8vw,4.5rem)]">
             {brand.name}
           </h2>
-          <p className="font-display italic text-2xl md:text-3xl text-golden-amber max-w-[28ch] leading-tight">
+          <p className="font-display italic text-2xl md:text-3xl text-golden-amber max-w-[28ch] leading-tight text-pretty">
             {brand.tagline}
           </p>
           <p className="font-body text-base text-concrete leading-relaxed text-pretty max-w-[44ch]">

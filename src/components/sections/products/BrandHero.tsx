@@ -14,15 +14,24 @@ export default function BrandHero({ brand }: { brand: Brand }) {
     <section className="relative bg-travertine pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="mx-auto max-w-[1200px] px-6 md:px-10">
         <div className="relative aspect-video overflow-hidden bg-ink">
-          <video
-            ref={videoRef}
-            className="absolute inset-0 h-full w-full object-cover"
-            src={brand.video}
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          />
+          {brand.video ? (
+            <video
+              ref={videoRef}
+              className="absolute inset-0 h-full w-full object-cover"
+              style={brand.videoScale !== undefined ? { transform: `scale(${brand.videoScale})` } : undefined}
+              src={brand.video}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="font-mono text-[11px] tracking-[0.32em] uppercase text-travertine/50">
+                Video coming soon
+              </span>
+            </div>
+          )}
           <div className="absolute inset-0 bg-ink/25" />
           <div className="absolute inset-0 grain animate-grain-shift opacity-15" />
 

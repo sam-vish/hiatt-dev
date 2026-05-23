@@ -21,17 +21,32 @@ export default function PageLoader({ visible }: { visible: boolean }) {
     return () => clearInterval(id)
   }, [visible])
 
+  const [isRendered, setIsRendered] = useState(true)
+
   useEffect(() => {
     if (!visible && loaderRef.current) {
       loaderRef.current.style.transform = 'translateY(-100%)'
       loaderRef.current.style.transition = 'transform 0.9s cubic-bezier(0.83, 0, 0.17, 1)'
+      
+      const handleTransitionEnd = (e: TransitionEvent) => {
+        if (e.propertyName === 'transform') {
+          setIsRendered(false)
+        }
+      }
+      const el = loaderRef.current
+      el.addEventListener('transitionend', handleTransitionEnd)
+      return () => {
+        el.removeEventListener('transitionend', handleTransitionEnd)
+      }
     }
   }, [visible])
+
+  if (!isRendered) return null
 
   return (
     <div
       ref={loaderRef}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-travertine"
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-travertine overflow-hidden"
       style={{ willChange: 'transform' }}
     >
       <div className="absolute inset-0 grain animate-grain-shift" />
@@ -39,12 +54,12 @@ export default function PageLoader({ visible }: { visible: boolean }) {
       <div className="relative flex flex-col items-center gap-12">
         <div className="relative w-40 h-40 flex items-center justify-center">
           <Image
-            src="/logos/Logo.avif"
+            src="/logos/hdc-emblem.png"
             alt="Hiatt Development Co."
-            width={318}
-            height={158}
+            width={1846}
+            height={1671}
             priority
-            className="w-28 h-auto relative z-10"
+            className="w-24 h-auto relative z-10"
           />
           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 160 160">
             <circle

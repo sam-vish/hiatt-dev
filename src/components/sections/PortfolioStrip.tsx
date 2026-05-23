@@ -67,8 +67,6 @@ function PortfolioCard({ project }: { project: Project }) {
           className="absolute inset-0 h-full w-full object-cover"
           src={project.cover}
           muted
-          loop
-          autoPlay
           playsInline
           preload="metadata"
         />

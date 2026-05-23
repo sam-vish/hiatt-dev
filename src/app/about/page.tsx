@@ -3,6 +3,7 @@ import PageHero from '@/components/sections/PageHero'
 import CtaBlock from '@/components/sections/CtaBlock'
 import StoryBlock from '@/components/sections/about/StoryBlock'
 import HeritageTimeline from '@/components/sections/about/HeritageTimeline'
+import TeamPhoto from '@/components/sections/about/TeamPhoto'
 import TeamGrid from '@/components/sections/about/TeamGrid'
 import PhilosophyGrid from '@/components/sections/about/PhilosophyGrid'
 
@@ -18,14 +19,15 @@ export default function AboutPage() {
       <PageHero
         pageNumber="02"
         pageLabel="About"
-        title="The studio"
-        italicTitle="behind the install."
-        intro="Hiatt Development Company is a small Orlando practice run by an 8th-generation Floridian and the people he chose to work with. We design, specify, and install custom windows and doors for the homes and buildings of Central Florida."
+        title="The team"
+        italicTitle="behind every install."
+        intro="A GC-licensed builder specializing in custom window and door openings. Founded by an 8th-generation Floridian, trusted by Orlando's top custom builders, architects, and high-end dealers — for install quality and the peace of mind that comes with it."
         meta={['Founded 2008', 'Orlando, FL', 'Licensed · Insured · CGC1521543']}
       />
 
       <StoryBlock />
       <HeritageTimeline />
+      <TeamPhoto />
       <TeamGrid />
       <PhilosophyGrid />
 

@@ -70,7 +70,7 @@ export default function HeroHome() {
   }, [])
 
   useEffect(() => {
-    videoRef.current?.play().catch(() => {})
+    videoRef.current?.play().catch(() => { })
   }, [])
 
   return (
@@ -78,7 +78,7 @@ export default function HeroHome() {
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos-compressed/hero.mp4"
+        src="/videos-compressed/hero-updated.mp4"
         muted
         loop
         playsInline
@@ -104,46 +104,46 @@ export default function HeroHome() {
       {/* Center stack */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 pointer-events-none">
         <div className="pointer-events-auto flex flex-col items-center">
-        <div className="overflow-hidden mb-6">
-          <div ref={taglineRef} className="font-mono text-[12px] md:text-[13px] tracking-[0.32em] uppercase text-travertine/80" style={{ opacity: 0 }}>
-            — GC-Licensed · Custom windows &amp; doors · Orlando, FL
+          <div className="overflow-hidden mb-6">
+            <div ref={taglineRef} className="font-mono text-[12px] md:text-[13px] tracking-[0.32em] uppercase text-travertine/80" style={{ opacity: 0 }}>
+              — GC-Licensed · Custom windows &amp; doors · Orlando, FL
+            </div>
           </div>
-        </div>
 
-        <h1
-          ref={titleRef}
-          className="text-center font-display font-light text-travertine leading-[0.95] tracking-tight"
-        >
-          <span className="block overflow-hidden">
-            <span className="h-line block whitespace-nowrap text-[10vw] md:text-[6.5vw]">
-              <em className="italic text-golden-amber">High-end</em> windows
-            </span>
-          </span>
-          <span className="block overflow-hidden">
-            <span className="h-line block whitespace-nowrap text-[10vw] md:text-[6.5vw]">&amp; doors, installed.</span>
-          </span>
-        </h1>
-
-        <div ref={ctaRef} className="mt-12 flex items-center gap-6" style={{ opacity: 0 }}>
-          <MagneticLink>
-            <Link
-              href="/contact"
-              data-cursor-hover
-              data-cursor-label="say hi"
-              className="group relative inline-flex items-center gap-3 px-8 py-4 border border-travertine/80 font-mono text-[13px] tracking-[0.24em] uppercase text-travertine overflow-hidden"
-            >
-              <span className="relative z-10 transition-colors duration-500 group-hover:text-ink">Begin a Project</span>
-              <span className="relative z-10 transition-colors duration-500 group-hover:text-ink">→</span>
-              <span className="absolute inset-0 z-0 origin-bottom scale-y-0 bg-travertine transition-transform duration-700 ease-exhale group-hover:scale-y-100" />
-            </Link>
-          </MagneticLink>
-          <Link
-            href="/portfolio"
-            className="hidden md:inline-flex font-mono text-[13px] tracking-[0.24em] uppercase text-travertine/70 hover:text-golden-amber transition-colors"
+          <h1
+            ref={titleRef}
+            className="text-center font-display font-light text-travertine leading-[0.95] tracking-tight"
           >
-            See the work
-          </Link>
-        </div>
+            <span className="block overflow-hidden">
+              <span className="h-line block whitespace-nowrap text-[10vw] md:text-[6.5vw]">
+                <em className="italic text-golden-amber">High-end</em> windows
+              </span>
+            </span>
+            <span className="block overflow-hidden">
+              <span className="h-line block whitespace-nowrap text-[10vw] md:text-[6.5vw]">&amp; doors, installed.</span>
+            </span>
+          </h1>
+
+          <div ref={ctaRef} className="mt-12 flex items-center gap-6" style={{ opacity: 0 }}>
+            <MagneticLink>
+              <Link
+                href="/contact"
+                data-cursor-hover
+                data-cursor-label="say hi"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 border border-travertine/80 font-mono text-[13px] tracking-[0.24em] uppercase text-travertine overflow-hidden"
+              >
+                <span className="relative z-10 transition-colors duration-500 group-hover:text-ink">Begin a Project</span>
+                <span className="relative z-10 transition-colors duration-500 group-hover:text-ink">→</span>
+                <span className="absolute inset-0 z-0 origin-bottom scale-y-0 bg-travertine transition-transform duration-700 ease-exhale group-hover:scale-y-100" />
+              </Link>
+            </MagneticLink>
+            <Link
+              href="/portfolio"
+              className="hidden md:inline-flex font-mono text-[13px] tracking-[0.24em] uppercase text-travertine/70 hover:text-golden-amber transition-colors"
+            >
+              See the work
+            </Link>
+          </div>
         </div>
       </div>
 

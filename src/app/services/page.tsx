@@ -20,7 +20,7 @@ export default function ServicesPage() {
         title="Three rooms"
         italicTitle="of one practice."
         intro="From whole-house glazing replacements to commercial storefront — we run every job through the same six-phase process and the same crew leadership. Specialized in installation of high-end, custom windows and doors."
-        meta={['Residential', 'Commercial', 'Installation', 'Aesthetics · Functionality · Security']}
+        meta={['Residential', 'Commercial', 'Installation']}
       />
 
       <PillarStack />

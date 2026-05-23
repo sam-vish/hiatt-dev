@@ -10,6 +10,7 @@ const NAV = [
   { href: '/services', label: 'Services' },
   { href: '/products', label: 'Products' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/testimonials', label: 'Testimonials' },
   { href: '/contact', label: 'Contact' },
 ]
 
@@ -25,8 +26,8 @@ export default function Navigation() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-[70] bg-florida-oak text-travertine">
-        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[88px]">
-          <Link href="/" aria-label="Hiatt Development Co. — Home" className="group flex items-center gap-3">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 md:px-10 h-[88px] gap-8">
+          <Link href="/" aria-label="Hiatt Development Co. — Home" className="group flex items-center gap-3 shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logos/hdc-logo-white.svg"
@@ -35,14 +36,14 @@ export default function Navigation() {
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
+          <nav className="hidden xl:flex items-center gap-4 2xl:gap-5">
             {NAV.map((item, i) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative font-mono text-[13px] tracking-[0.24em] uppercase whitespace-nowrap"
+                className="group relative font-mono text-[12px] tracking-[0.2em] uppercase whitespace-nowrap"
               >
-                <span className="mr-2 text-travertine/60 tabular-nums">
+                <span className="hidden 2xl:inline mr-2 text-travertine/60 tabular-nums">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 {item.label}
@@ -55,7 +56,7 @@ export default function Navigation() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
+          <div className="hidden xl:flex items-center gap-3 2xl:gap-4 shrink-0">
             <a
               href="tel:407-488-5620"
               className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/80 hover:text-travertine transition-colors whitespace-nowrap"
@@ -77,7 +78,7 @@ export default function Navigation() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden relative w-9 h-9 flex flex-col items-center justify-center gap-[5px]"
+            className="xl:hidden relative w-9 h-9 flex flex-col items-center justify-center gap-[5px]"
             aria-label="Toggle menu"
           >
             <span
@@ -96,7 +97,7 @@ export default function Navigation() {
 
       {/* Mobile sheet */}
       <div
-        className={`fixed inset-0 z-[60] lg:hidden transition-opacity duration-500 ${
+        className={`fixed inset-0 z-[60] xl:hidden transition-opacity duration-500 ${
           open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >

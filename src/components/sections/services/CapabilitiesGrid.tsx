@@ -10,13 +10,7 @@ const CAPS: Capability[] = [
   { num: '03', label: 'Folding glass walls', href: 'https://www.nanawall.com/glass-walls/folding' },
   { num: '04', label: 'Pivot doors, custom hardware', href: 'https://www.fritsjurgens.com/pivot-hinge' },
   { num: '05', label: 'Storefront & curtain wall', href: 'https://www.kawneer.com/products/curtain-wall/1600-wall-system1-curtain-wall/' },
-  { num: '06', label: 'Historic-district installs', href: 'https://cityofkeywest-fl.gov/480/Historic-Windows' },
-  { num: '07', label: 'Field templating', href: 'https://www.prodim-systems.com/industries/doors-windows/' },
-  { num: '08', label: 'Permitting & inspection', href: 'https://safeguardimpact.com/broward-county-impact-window-permit-guide/' },
-  { num: '09', label: 'Stucco / trim restoration', href: 'https://1800remodel.com/exterior-window-trim-on-stucco/' },
-  { num: '10', label: 'Phased night-shift install', href: 'https://centralglassinc.com/apartment-complex-window-replacement-retrofit/' },
-  { num: '11', label: 'Manufacturer coordination', href: 'https://www.wdma.com/' },
-  { num: '12', label: '20-year service relationships', href: 'https://www.thisoldhouse.com/windows/window-warranties' },
+  { num: '06', label: 'Field templating & shop drawings', href: 'https://www.prodim-systems.com/industries/doors-windows/' },
 ]
 
 export default function CapabilitiesGrid() {
@@ -33,7 +27,7 @@ export default function CapabilitiesGrid() {
             What we&apos;re known for.
           </h2>
         </Reveal>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-concrete/30 border-y border-concrete/30">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-concrete/30 border-y border-concrete/30">
           {CAPS.map((c) => {
             const cellClass = 'bg-travertine p-6 md:p-8 flex flex-col gap-3 group hover:bg-travertine-deep transition-colors duration-500'
             const inner = (

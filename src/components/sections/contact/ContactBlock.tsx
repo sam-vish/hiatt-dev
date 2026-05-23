@@ -50,7 +50,7 @@ export default function ContactBlock() {
               <InfoLine label="City" value="Orlando, FL 32824" />
               <InfoLine label="Phone" value="407 · 488 · 5620" href="tel:407-488-5620" />
               <InfoLine label="Email" value="sales@hiattdevelopment.com" href="mailto:sales@hiattdevelopment.com" />
-              <InfoLine label="Hours" value="Mon — Fri · 8a — 5p EST" />
+              <InfoLine label="Hours" value="Mon — Fri · 8a — 4p EST" />
             </div>
           </Reveal>
 
@@ -97,7 +97,7 @@ export default function ContactBlock() {
 
                 <div className="flex flex-col gap-3">
                   <label htmlFor="type" className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
-                    — Project type
+                    Project type
                   </label>
                   <select
                     id="type"
@@ -116,7 +116,7 @@ export default function ContactBlock() {
 
                 <div className="flex flex-col gap-3">
                   <label htmlFor="message" className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
-                    — Tell us about it
+                    Tell us about it
                   </label>
                   <textarea
                     id="message"
@@ -168,10 +168,9 @@ function Field({
 }) {
   return (
     <div className="flex flex-col gap-3">
-      <label htmlFor={id} className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete flex items-center gap-3">
-        <span className="h-px w-6 bg-concrete/40" />
+      <label htmlFor={id} className="font-mono text-[12px] tracking-[0.24em] uppercase text-concrete">
         {label}
-        {required && <span className="text-golden-amber">*</span>}
+        {required && <span className="ml-1 text-golden-amber">*</span>}
       </label>
       <input
         id={id}

@@ -30,7 +30,7 @@ const DEFAULT_LOGOS: Logo[] = [
 
 export default function ClientLogos({
   eyebrow = 'Suppliers we install',
-  heading = 'The brands behind every project.',
+  heading = '11 manufacturers across Central Florida.',
   logos = DEFAULT_LOGOS,
 }: Props) {
   return (

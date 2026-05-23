@@ -48,7 +48,7 @@ export default function RouteCurtain({ pathname }: { pathname: string }) {
     <div
       ref={overlayRef}
       aria-hidden
-      className="fixed inset-0 z-[80] hidden bg-travertine"
+      className="fixed inset-0 z-[80] hidden bg-travertine overflow-hidden"
       style={{ willChange: 'transform' }}
     >
       <div className="absolute inset-0 grain animate-grain-shift" />

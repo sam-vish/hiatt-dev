@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import PageHero from '@/components/sections/PageHero'
-import PortfolioGrid from '@/components/sections/portfolio/PortfolioGrid'
+import PortfolioShowcase from '@/components/sections/portfolio/PortfolioShowcase'
 import CtaBlock from '@/components/sections/CtaBlock'
 import { PROJECTS } from '@/lib/data/projects'
 
@@ -22,7 +22,7 @@ export default function PortfolioPage() {
         meta={[`${PROJECTS.length} projects`, 'Central Florida', '2008 — present']}
       />
 
-      <PortfolioGrid projects={PROJECTS} />
+      <PortfolioShowcase projects={PROJECTS} />
 
       <CtaBlock
         heading="Got an opening in mind?"

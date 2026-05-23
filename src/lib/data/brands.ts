@@ -6,7 +6,8 @@ export type Brand = {
   copy: string[]
   series: { name: string; description: string }[]
   specs: { label: string; value: string }[]
-  video: string
+  video?: string
+  videoScale?: number
   poster?: string
   accent: string
 }
@@ -109,7 +110,8 @@ export const BRANDS: Brand[] = [
       { label: 'Hardware', value: 'European-sourced, top-hung, low rolling resistance' },
       { label: 'Origin', value: 'Naples, FL · since 1996' },
     ],
-    video: '/videos/euro-wall.mp4',
+    video: '/videos-compressed/euro-wall.mp4',
+    videoScale: 1.25,
     accent: '#5A7CA0',
   },
 ]

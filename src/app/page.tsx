@@ -36,15 +36,15 @@ export default function HomePage() {
 
       <BrandRoster
         brands={BRANDS}
-        eyebrow="Manufacturer partners"
-        heading="The brands we install."
+        eyebrow="Featured partners"
+        heading="The four brands we go deepest with."
       />
 
       <PortfolioStrip projects={PROJECTS} />
 
       <CtaBlock
-        heading="Bring us a drawing,"
-        emphasis="a site, or an idea."
+        heading="The installer Orlando's"
+        emphasis="best builders work with."
       />
     </>
   )
