@@ -2,11 +2,9 @@ import HeroHome from '@/components/sections/HeroHome'
 import PillarTiles from '@/components/sections/PillarTiles'
 import StatementBlock from '@/components/sections/StatementBlock'
 import ClientLogos from '@/components/sections/ClientLogos'
-import BrandRoster from '@/components/sections/BrandRoster'
 import PortfolioStrip from '@/components/sections/PortfolioStrip'
 import CtaBlock from '@/components/sections/CtaBlock'
 import { PILLARS } from '@/lib/data/services'
-import { BRANDS } from '@/lib/data/brands'
 import { PROJECTS } from '@/lib/data/projects'
 
 export default function HomePage() {
@@ -32,12 +30,6 @@ export default function HomePage() {
           href: p.href,
           video: p.video,
         }))}
-      />
-
-      <BrandRoster
-        brands={BRANDS}
-        eyebrow="Featured partners"
-        heading="The four brands we go deepest with."
       />
 
       <PortfolioStrip projects={PROJECTS} />
