@@ -88,7 +88,7 @@ export default function PortfolioShowcase({ projects }: { projects: Project[] })
             <img
               className="absolute inset-0 h-full w-full object-cover"
               src={active.cover}
-              alt={active.title}
+              alt={active.coverAlt}
             />
           )}
           <div className="absolute inset-0 bg-ink/20 group-hover:bg-ink/35 transition-colors duration-500" />
@@ -172,7 +172,7 @@ export default function PortfolioShowcase({ projects }: { projects: Project[] })
                     <img
                       className="absolute inset-0 h-full w-full object-cover"
                       src={p.cover}
-                      alt={p.title}
+                      alt={p.coverAlt}
                     />
                   )}
                   <div

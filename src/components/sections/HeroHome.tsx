@@ -78,7 +78,7 @@ export default function HeroHome() {
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos-compressed/hero-updated.mp4"
+        src="/videos-compressed/hero-new.mp4"
         muted
         loop
         playsInline
@@ -106,7 +106,7 @@ export default function HeroHome() {
         <div className="pointer-events-auto flex flex-col items-center">
           <div className="overflow-hidden mb-6">
             <div ref={taglineRef} className="font-mono text-[12px] md:text-[13px] tracking-[0.32em] uppercase text-travertine/80" style={{ opacity: 0 }}>
-              — GC-Licensed · Custom windows &amp; doors · Orlando, FL
+              — GC-licensed. Custom windows and doors, installed to specification.
             </div>
           </div>
 

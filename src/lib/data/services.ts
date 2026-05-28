@@ -13,7 +13,7 @@ export const PILLARS: Pillar[] = [
     id: 'residential',
     num: '01',
     name: 'Custom Residential',
-    blurb: 'Building your home from the ground up or transforming the one you already love.',
+    blurb: 'Whole-house glazing, renovations, and new construction — managed by a licensed general contractor from permit to walkthrough.',
     details: [
       'Whole-house glazing',
       'Renovation and additions',
@@ -27,7 +27,7 @@ export const PILLARS: Pillar[] = [
     id: 'commercial',
     num: '02',
     name: 'Commercial',
-    blurb: 'General contracting and construction management for the buildings that have to keep working.',
+    blurb: 'Storefront, curtain wall, and tenant build-out — installed on schedule, with full permitting and code compliance handled in-house.',
     details: [
       'Storefront and curtain wall',
       'Tenant build-out coordination',
@@ -41,7 +41,7 @@ export const PILLARS: Pillar[] = [
     id: 'installation',
     num: '03',
     name: 'Installation',
-    blurb: 'High-end, custom windows and doors specified, ordered, installed, and stood behind.',
+    blurb: 'Custom windows and doors — specified to the opening, ordered direct, installed by the crew that pulled the permit, and covered under warranty.',
     details: [
       'Field templating and shop drawings',
       'Impact-rated glazing for hurricane zones',
@@ -60,13 +60,13 @@ export const PROCESS: ProcessStep[] = [
     num: '01',
     name: 'Discovery',
     description:
-      'We sit down with the homeowner, the architect, or the GC. We ask the boring questions: how the house breathes, how the family lives, where the storms come from. The answers shape the spec.',
+      'Every project begins with a conversation — with the architect, the custom builder, or the GC of record. We ask the questions that shape the specification: how the structure is framed, how the space is intended to function, where the prevailing weather comes from. The answers determine everything that follows.',
   },
   {
     num: '02',
     name: 'Survey',
     description:
-      'On-site templating. Every opening measured at three points minimum. We catch out-of-square framing, deflected headers, and stucco belly before they cost the project a week.',
+      'On-site templating before anything is specified or ordered. Every opening measured at three points minimum. We identify out-of-square framing, deflected headers, and stucco irregularities at the survey stage — before they become change orders.',
   },
   {
     num: '03',
@@ -90,7 +90,7 @@ export const PROCESS: ProcessStep[] = [
     num: '06',
     name: 'Walkthrough',
     description:
-      'Operate every leaf with the client. Hand off the warranty, the maintenance schedule, and the manufacturer paperwork. We pick up the phone for years afterward.',
+      'Every operable unit demonstrated with the client or their representative present. Warranty documentation, maintenance schedules, and manufacturer paperwork transferred in full. We remain reachable — and we answer — for the life of the install.',
   },
 ]
 
@@ -101,19 +101,19 @@ export const VALUES: Value[] = [
     num: '01',
     name: 'Integrity',
     description:
-      'Measure twice, cut once. The job is done when it would pass our inspection — not when it would pass the client’s.',
+      "The job is done when it passes our inspection — not when it passes the client's. That standard has not changed in seventeen years.",
   },
   {
     num: '02',
     name: 'Collaboration',
     description:
-      'We work alongside architects, builders, and homeowners as partners on the same project — not as a vendor handing off a box.',
+      'Architects, builders, and general contractors are partners on every project — not parties receiving a delivery. We are in the room from specification to walkthrough.',
   },
   {
     num: '03',
     name: 'Stewardship',
     description:
-      'Florida homes face hurricanes, humidity, and time. We install with that future in mind, and we stand behind what we put in the wall.',
+      'Florida homes are built against hurricanes, salt air, and decades of heat. Every install accounts for that future — and we remain reachable for the life of the work.',
   },
 ]
 
@@ -140,8 +140,8 @@ export const HERITAGE: Era[] = [
   },
   {
     year: 'Today',
-    name: 'A Crew, Not a Roster',
+    name: 'A Standard, Not a Roster',
     description:
-      'Project managers, an operations lead, an office manager — the same names on every job. Built on relationships, not transactions.',
+      'Project managers, an operations lead, an office manager — held to the same standard on every job. Built on relationships, not transactions.',
   },
 ]

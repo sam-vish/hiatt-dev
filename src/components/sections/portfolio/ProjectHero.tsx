@@ -31,7 +31,7 @@ export default function ProjectHero({ project }: { project: Project }) {
         />
       ) : (
         /* eslint-disable-next-line @next/next/no-img-element */
-        <img src={project.cover} alt={project.title} className="absolute inset-0 h-full w-full object-cover" />
+        <img src={project.cover} alt={project.coverAlt} className="absolute inset-0 h-full w-full object-cover" />
       )}
       <div className="absolute inset-0 bg-ink/35" />
       <div className="absolute inset-0 vignette" />

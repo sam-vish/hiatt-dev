@@ -66,9 +66,9 @@ export const BRANDS: Brand[] = [
   {
     slug: 'superhouse',
     name: 'SuperHouse',
-    tagline: 'Architectural glass walls for modern Florida living.',
+    tagline: "Architectural glass walls for Florida's open-plan architecture.",
     blurb:
-      'Floor-to-ceiling, wall-to-wall, designed to disappear. SuperHouse is the answer when the architect wants the house to read as one continuous room with the lanai.',
+      'Floor-to-ceiling, wall-to-wall, engineered to disappear into the structure. SuperHouse is the specification when the architect wants the interior and lanai to read as a single continuous space.',
     copy: [
       'Steel-look slim profiles. Multi-track sliding walls. Pivot doors that swing on bearings, not hinges. SuperHouse units are the kind of detail that show up on the cover of a magazine — and they ship the way the architect drew them.',
       'They are also unforgiving to install. The track has to be flat. The header has to be square. We pre-survey openings, we shim under load, and we test every leaf at every position before signoff.',

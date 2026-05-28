@@ -3,9 +3,9 @@ import './globals.css'
 import SiteShell from '@/components/layout/SiteShell'
 
 export const metadata: Metadata = {
-  title: 'Hiatt Development Company — Custom Windows & Doors, Orlando',
+  title: 'GC-Licensed Window & Door Installer | Hiatt Development Co. — Orlando, FL',
   description:
-    "Hiatt Development Company — Orlando's premier custom window and door installation. Third-generation craftsmanship for residential and commercial projects across Central Florida.",
+    'A GC-licensed window and door installer serving Central Florida since 2008. Hiatt Development Co. works with architects, custom builders, and general contractors on projects across Isleworth, Golden Oak, Winter Park, and Lake Nona.',
   metadataBase: new URL('https://www.hiattdevelopment.com'),
   openGraph: {
     title: 'Hiatt Development Company',

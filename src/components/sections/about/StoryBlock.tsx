@@ -19,7 +19,7 @@ export default function StoryBlock() {
             <div className="aspect-[3/4] relative overflow-hidden">
               <img
                 src="/images/jason-hiatt.webp"
-                alt="Jason Hiatt, founder"
+                alt="Jason Hiatt, Founder · President — Hiatt Development Company"
                 className="absolute inset-0 h-full w-full object-cover grayscale animate-kenburns"
               />
               <div className="absolute inset-0 bg-florida-oak/15 mix-blend-multiply" />

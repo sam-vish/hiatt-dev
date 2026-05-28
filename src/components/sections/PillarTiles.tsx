@@ -25,7 +25,7 @@ export default function PillarTiles({ pillars }: { pillars: Pillar[] }) {
           as="h2"
           className="font-display font-light text-pivot-black text-balance text-[10vw] md:text-[6vw] leading-[0.95] mb-20"
         >
-          {`Three disciplines. One standard.`}
+          {`Built for builders. Trusted by architects.`}
         </SplitHeading>
 
         <div className="grid gap-px bg-concrete/30 border-y border-concrete/30 md:grid-cols-3">

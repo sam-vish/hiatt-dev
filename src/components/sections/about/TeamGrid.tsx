@@ -39,7 +39,7 @@ export default function TeamGrid() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={m.image}
-                    alt={m.name}
+                    alt={`${m.name}, ${m.role} — Hiatt Development Company`}
                     className="absolute inset-0 h-full w-full object-cover scale-[1.02] group-hover:scale-100 transition-transform duration-1000"
                   />
                 </div>

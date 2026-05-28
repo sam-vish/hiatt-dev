@@ -5,12 +5,14 @@ export type Project = {
   year: number
   type: 'Residential' | 'Commercial'
   cover: string
+  coverAlt: string
   ratio: '4/3' | '3/4' | '16/9' | '1/1'
   brief: string
   scope: string[]
   brands: string[]
   gallery: { src: string; ratio: '4/3' | '3/4' | '16/9' | '1/1'; caption?: string }[]
   facts: { label: string; value: string }[]
+  metaTitle?: string
 }
 
 export const PROJECTS: Project[] = [
@@ -21,6 +23,8 @@ export const PROJECTS: Project[] = [
     year: 2024,
     type: 'Residential',
     cover: '/portfolio-stills/isleworth.webp',
+    coverAlt: 'Whole-house glazing replacement, Isleworth estate, Windermere FL — Andersen, Euro-Wall, PGT installation',
+    metaTitle: 'Isleworth Residence — Whole-House Glazing | Hiatt Development Co., Windermere FL',
     ratio: '4/3',
     brief:
       'A whole-house glazing replacement on a Mediterranean-revival estate. Forty-two openings, six folding walls, one continuous threshold from kitchen to lanai.',
@@ -50,6 +54,7 @@ export const PROJECTS: Project[] = [
     year: 2024,
     type: 'Residential',
     cover: '/videos-compressed/lakenona-updated.mp4',
+    coverAlt: 'Custom window and door installation, Lake Nona FL — Hiatt Development Co.',
     ratio: '3/4',
     brief:
       'New construction modern. SuperHouse slim-steel walls front and back, with a 12-foot pivot door at the entry that swings on a single floor bearing.',
@@ -76,6 +81,7 @@ export const PROJECTS: Project[] = [
     year: 2023,
     type: 'Residential',
     cover: '/videos-compressed/winter-park-bungalow.mp4',
+    coverAlt: 'Historic district window installation, Winter Park FL — Hiatt Development Co.',
     ratio: '16/9',
     brief:
       'Historic bungalow restoration. The challenge was hurricane-rating the windows without changing how the house reads from the street.',
@@ -99,6 +105,7 @@ export const PROJECTS: Project[] = [
     year: 2023,
     type: 'Residential',
     cover: '/videos-compressed/oceanfront-euro-wall-installation.mp4',
+    coverAlt: 'Euro-Wall folding glass wall installation, New Smyrna Beach FL — Hiatt Development Co.',
     ratio: '4/3',
     brief:
       'A direct-oceanfront Euro-Wall install staged from the beach side. Crane-lifted the great-room panels over the dune line and set them on a single continuous threshold.',
@@ -123,6 +130,7 @@ export const PROJECTS: Project[] = [
     year: 2023,
     type: 'Residential',
     cover: '/portfolio-stills/baldwin-park.webp',
+    coverAlt: 'Custom window renovation, Baldwin Park Orlando FL — Hiatt Development Co.',
     ratio: '3/4',
     brief:
       'A whole-back-of-house openness. Two folding walls and a kitchen pass-through replaced what used to be three small windows.',
@@ -142,6 +150,7 @@ export const PROJECTS: Project[] = [
     year: 2022,
     type: 'Residential',
     cover: '/portfolio-stills/cocoa-beach.webp',
+    coverAlt: 'Hurricane-rated window installation, Cocoa Beach FL — Hiatt Development Co.',
     ratio: '4/3',
     brief:
       'Direct ocean exposure. Every assembly tested to Large Missile, Level D, with hardware specified for salt-air longevity.',

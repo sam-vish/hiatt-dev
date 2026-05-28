@@ -5,9 +5,9 @@ import TestimonialsSection from '@/components/sections/testimonials/Testimonials
 import { TESTIMONIALS } from '@/lib/data/testimonials'
 
 export const metadata: Metadata = {
-  title: 'Testimonials — Hiatt Development Company',
+  title: 'Client Testimonials | Hiatt Development Co. — Orlando, FL',
   description:
-    'What Orlando’s custom builders, architects, and high-end dealers say about working with Hiatt Development Company.',
+    "What Central Florida's architects and custom builders say about working with Hiatt Development Co. — GC-licensed window and door installer, Orlando FL.",
 }
 
 export default function TestimonialsPage() {
@@ -16,8 +16,8 @@ export default function TestimonialsPage() {
       <PageHero
         pageNumber="06"
         pageLabel="Testimonials"
-        title="What our clients"
-        italicTitle="are saying."
+        title="What architects and builders say"
+        italicTitle="about working with us."
         intro="Builders, architects, and dealers we work with — in their own words. Content to be supplied by the client."
         meta={['Custom builders', 'Architects', 'High-end dealers']}
       />

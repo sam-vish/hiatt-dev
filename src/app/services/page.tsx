@@ -6,9 +6,9 @@ import CapabilitiesGrid from '@/components/sections/services/CapabilitiesGrid'
 import CtaBlock from '@/components/sections/CtaBlock'
 
 export const metadata: Metadata = {
-  title: 'Services — Hiatt Development Company',
+  title: 'Custom Window & Door Installation Services | Hiatt Development Co. — Orlando, FL',
   description:
-    'Custom residential, commercial, and high-end window and door installation. Process, capabilities, and how we work in Central Florida.',
+    'GC-licensed installation of custom windows and doors across Central Florida. Residential, commercial, and specialty projects — six-phase process, full permitting, consistent standards from survey to walkthrough.',
 }
 
 export default function ServicesPage() {
@@ -17,9 +17,9 @@ export default function ServicesPage() {
       <PageHero
         pageNumber="03"
         pageLabel="Services"
-        title="Three rooms"
-        italicTitle="of one practice."
-        intro="From whole-house glazing replacements to commercial storefront — we run every job through the same six-phase process and the same crew leadership. Specialized in installation of high-end, custom windows and doors."
+        title="Three services."
+        italicTitle="One licensed general contractor managing every phase."
+        intro="From whole-house glazing on a Winter Park estate to storefront curtain wall in downtown Orlando — every project runs through the same six-phase process and the same GC license. Specialized in the installation of high-end, custom windows and doors across Central Florida."
         meta={['Residential', 'Commercial', 'Installation']}
       />
 

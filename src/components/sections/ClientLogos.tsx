@@ -30,7 +30,7 @@ const DEFAULT_LOGOS: Logo[] = [
 
 export default function ClientLogos({
   eyebrow = 'Suppliers we install',
-  heading = '11 manufacturers across Central Florida.',
+  heading = '11 manufacturer relationships. Every product we install, we stand behind.',
   logos = DEFAULT_LOGOS,
 }: Props) {
   return (
@@ -56,7 +56,7 @@ export default function ClientLogos({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={logo.src}
-                alt={logo.name}
+                alt={`${logo.name} windows and doors — installed by Hiatt Development Co., Orlando FL`}
                 className="max-h-20 md:max-h-24 w-auto object-contain opacity-70 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
               />
             </div>

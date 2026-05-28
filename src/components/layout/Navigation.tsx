@@ -31,7 +31,7 @@ export default function Navigation() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logos/hdc-logo-white.svg"
-              alt="Hiatt Development Co."
+              alt="Hiatt Development Company logo — GC-licensed window and door installer, Orlando FL"
               className="h-10 md:h-12 w-auto"
             />
           </Link>

@@ -3,9 +3,9 @@ import PageHero from '@/components/sections/PageHero'
 import ContactBlock from '@/components/sections/contact/ContactBlock'
 
 export const metadata: Metadata = {
-  title: 'Contact — Hiatt Development Company',
+  title: 'Begin a Project | Hiatt Development Co. — Orlando, FL',
   description:
-    'Begin a project with Hiatt Development Company. Custom windows and doors in Orlando, FL.',
+    'Start a project with Hiatt Development Co. — GC-licensed window and door installer in Orlando, FL. Request a survey or consultation.',
 }
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
         pageLabel="Contact"
         title="Begin a"
         italicTitle="conversation."
-        intro="Tell us about the opening, the building, the timeline, or just the idea. We pick up the phone and we read every form."
+        intro="Tell us about the opening, the plans, the timeline, or the idea. We read every form and we pick up the phone."
         meta={['Orlando, FL', 'Mon — Fri · 8a — 4p EST', '407 · 488 · 5620']}
       />
       <ContactBlock />

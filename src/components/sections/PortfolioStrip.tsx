@@ -74,7 +74,7 @@ function PortfolioCard({ project }: { project: Project }) {
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={project.cover}
-          alt={project.title}
+          alt={project.coverAlt}
           className="absolute inset-0 h-full w-full object-cover"
         />
       )}

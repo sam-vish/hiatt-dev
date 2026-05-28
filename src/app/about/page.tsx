@@ -8,9 +8,9 @@ import TeamGrid from '@/components/sections/about/TeamGrid'
 import PhilosophyGrid from '@/components/sections/about/PhilosophyGrid'
 
 export const metadata: Metadata = {
-  title: 'About — Hiatt Development Company',
+  title: 'Our Story | Hiatt Development Co. — GC-Licensed, Orlando FL',
   description:
-    'Eight generations of Florida. The story behind Hiatt Development Co. — Jason, the team, the philosophy, the work.',
+    "Founded by an 8th-generation Floridian in 2008. GC-licensed window and door installer trusted by Central Florida's top architects, custom builders, and general contractors.",
 }
 
 export default function AboutPage() {
@@ -19,9 +19,9 @@ export default function AboutPage() {
       <PageHero
         pageNumber="02"
         pageLabel="About"
-        title="The team"
-        italicTitle="behind every install."
-        intro="A GC-licensed builder specializing in custom window and door openings. Founded by an 8th-generation Floridian, trusted by Orlando's top custom builders, architects, and high-end dealers — for install quality and the peace of mind that comes with it."
+        title="Fifteen years."
+        italicTitle="One standard."
+        intro="GC-licensed and founded in Orlando in 2008. Hiatt Development Company installs high-end, custom windows and doors for architects, custom builders, and general contractors across Isleworth, Golden Oak, Winter Park, Lake Nona, and the broader Central Florida region. The same standard. Every project."
         meta={['Founded 2008', 'Orlando, FL', 'Licensed · Insured · CGC1521543']}
       />
 
