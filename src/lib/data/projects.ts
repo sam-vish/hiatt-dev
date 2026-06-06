@@ -22,10 +22,10 @@ export const PROJECTS: Project[] = [
     city: 'Windermere, FL',
     year: 2024,
     type: 'Residential',
-    cover: '/portfolio-stills/isleworth.webp',
+    cover: '/videos-compressed/isleworth-gardens.mp4',
     coverAlt: 'Whole-house glazing replacement, Isleworth estate, Windermere FL — Andersen, Euro-Wall, PGT installation',
     metaTitle: 'Isleworth Residence — Whole-House Glazing | Hiatt Development Co., Windermere FL',
-    ratio: '4/3',
+    ratio: '16/9',
     brief:
       'A whole-house glazing replacement on a Mediterranean-revival estate. Forty-two openings, six folding walls, one continuous threshold from kitchen to lanai.',
     scope: [
@@ -37,7 +37,8 @@ export const PROJECTS: Project[] = [
     ],
     brands: ['Andersen', 'Euro-Wall', 'PGT'],
     gallery: [
-      { src: '/videos-compressed/isleworth-residence.mp4', ratio: '16/9', caption: 'Great room — fully retracted' },
+      { src: '/videos-compressed/isleworth-gardens.mp4', ratio: '16/9', caption: 'Great room — fully retracted' },
+      { src: '/images/isleworth-gardens.webp', ratio: '16/9', caption: 'Front elevation' },
       { src: '/images/kitchen-casement.webp', ratio: '4/3', caption: 'Kitchen casement reset' },
     ],
     facts: [
@@ -53,9 +54,9 @@ export const PROJECTS: Project[] = [
     city: 'Lake Nona, FL',
     year: 2024,
     type: 'Residential',
-    cover: '/videos-compressed/lakenona-updated.mp4',
+    cover: '/videos-compressed/lake-nona.mp4',
     coverAlt: 'Custom window and door installation, Lake Nona FL — Hiatt Development Co.',
-    ratio: '3/4',
+    ratio: '16/9',
     brief:
       'New construction modern. SuperHouse slim-steel walls front and back, with a 12-foot pivot door at the entry that swings on a single floor bearing.',
     scope: [
@@ -66,7 +67,9 @@ export const PROJECTS: Project[] = [
     ],
     brands: ['SuperHouse'],
     gallery: [
-      { src: '/images/front-elevation-of-lake-nona.webp', ratio: '16/9', caption: 'Front elevation' },
+      { src: '/videos-compressed/lake-nona.mp4', ratio: '16/9', caption: 'Walk-through' },
+      { src: '/images/lake-nona.webp', ratio: '16/9', caption: 'Front elevation' },
+      { src: '/images/front-elevation-of-lake-nona.webp', ratio: '16/9', caption: 'Street view' },
     ],
     facts: [
       { label: 'Tallest leaf', value: '12 ft' },
@@ -104,7 +107,7 @@ export const PROJECTS: Project[] = [
     city: 'New Smyrna Beach, FL',
     year: 2023,
     type: 'Residential',
-    cover: '/videos-compressed/oceanfront-euro-wall-installation.mp4',
+    cover: '/videos-compressed/oceanfront-euro-wall.mp4',
     coverAlt: 'Euro-Wall folding glass wall installation, New Smyrna Beach FL — Hiatt Development Co.',
     ratio: '4/3',
     brief:
@@ -116,7 +119,7 @@ export const PROJECTS: Project[] = [
       'Marine-grade hardware specified for salt exposure',
     ],
     brands: ['Euro-Wall'],
-    gallery: [{ src: '/videos-compressed/oceanfront-euro-wall-installation.mp4', ratio: '16/9' }],
+    gallery: [{ src: '/videos-compressed/oceanfront-euro-wall.mp4', ratio: '16/9' }],
     facts: [
       { label: 'Heaviest panel', value: '780 lb' },
       { label: 'Lift method', value: 'Crane over dune' },
@@ -124,43 +127,63 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    slug: 'baldwin-park-renovation',
-    title: 'Baldwin Park Renovation',
-    city: 'Baldwin Park, FL',
-    year: 2023,
+    slug: 'carmel-residence',
+    title: 'Carmel Residence',
+    city: 'Dr. Phillips, FL',
+    // TODO: confirm year with Jason
+    year: 2024,
     type: 'Residential',
-    cover: '/portfolio-stills/baldwin-park.webp',
-    coverAlt: 'Custom window renovation, Baldwin Park Orlando FL — Hiatt Development Co.',
-    ratio: '3/4',
+    cover: '/videos-compressed/carmel.mp4',
+    coverAlt: 'High-end window and door installation, Carmel estate, Dr. Phillips Orlando FL — Hiatt Development Co.',
+    metaTitle: 'Carmel Residence — Custom Window & Door Installation | Hiatt Development Co., Dr. Phillips FL',
+    ratio: '16/9',
     brief:
-      'A whole-back-of-house openness. Two folding walls and a kitchen pass-through replaced what used to be three small windows.',
-    scope: ['Euro-Wall 4400 folding system', 'New header structural', 'Bi-parting kitchen pass-through'],
-    brands: ['Euro-Wall'],
-    gallery: [{ src: '/videos-compressed/baldwin-park-renovation.mp4', ratio: '4/3' }],
+      'A lakefront estate in Carmel — the gated enclave of one-acre properties off Bay Hill in Dr. Phillips. High-end window and door systems specified to frame uninterrupted sunset views across the water.',
+    // TODO: confirm exact scope, brands, and facts with Jason — placeholders below
+    scope: [
+      'Survey and template every opening',
+      'Custom window and door package',
+      'Trim and finish to match the architecture',
+    ],
+    brands: [],
+    gallery: [
+      { src: '/videos-compressed/carmel.mp4', ratio: '16/9', caption: 'Walk-through' },
+      { src: '/images/carmel.webp', ratio: '16/9', caption: 'Elevation' },
+    ],
     facts: [
-      { label: 'Opening width', value: '24 ft' },
-      { label: 'Folded stack', value: '14"' },
-      { label: 'Duration', value: '10 weeks' },
+      { label: 'Community', value: 'Carmel · Dr. Phillips' },
+      { label: 'Setting', value: 'Lakefront estate' },
     ],
   },
   {
-    slug: 'cocoa-beach-coastal',
-    title: 'Cocoa Beach Coastal Home',
-    city: 'Cocoa Beach, FL',
-    year: 2022,
+    slug: 'windermere-residence',
+    title: 'Windermere Residence',
+    city: 'Windermere, FL',
+    // TODO: confirm year with Jason
+    year: 2024,
     type: 'Residential',
-    cover: '/portfolio-stills/cocoa-beach.webp',
-    coverAlt: 'Hurricane-rated window installation, Cocoa Beach FL — Hiatt Development Co.',
-    ratio: '4/3',
+    cover: '/videos-compressed/windermere.mp4',
+    coverAlt: 'High-end window and door installation, Windermere FL — Hiatt Development Co.',
+    metaTitle: 'Windermere Residence — Custom Window & Door Installation | Hiatt Development Co., Windermere FL',
+    ratio: '16/9',
     brief:
-      'Direct ocean exposure. Every assembly tested to Large Missile, Level D, with hardware specified for salt-air longevity.',
-    scope: ['PGT WinGuard Aluminum throughout', 'Marine-grade hardware', 'Re-stucco and re-finish'],
-    brands: ['PGT'],
-    gallery: [{ src: '/videos-compressed/cocoa-beach-coastal-home.mp4', ratio: '4/3' }],
+      'A custom residence in Windermere, the lakefront town on the Butler Chain just west of Orlando. High-end window and door systems specified to open the house to the water and the Florida light.',
+    // TODO: confirm exact scope, brands, and facts with Jason — placeholders below
+    scope: [
+      'Survey and template every opening',
+      'Custom window and door package',
+      'Trim and finish to match the architecture',
+    ],
+    brands: [],
+    gallery: [
+      { src: '/images/windermere-1.webp', ratio: '16/9', caption: 'Elevation' },
+      { src: '/images/windermere-2.webp', ratio: '16/9', caption: 'Interior' },
+      { src: '/images/windermere-3.webp', ratio: '16/9', caption: 'Approach' },
+      { src: '/images/windermere-4.webp', ratio: '16/9', caption: 'Facade' },
+    ],
     facts: [
-      { label: 'Wind exposure', value: 'Direct ocean' },
-      { label: 'Wind rating', value: 'Large Missile, Level D' },
-      { label: 'Duration', value: '12 weeks' },
+      { label: 'Community', value: 'Windermere' },
+      { label: 'Scope', value: 'Custom residential' },
     ],
   },
 ]

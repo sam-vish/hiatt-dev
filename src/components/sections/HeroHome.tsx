@@ -116,7 +116,7 @@ export default function HeroHome() {
           >
             <span className="block overflow-hidden">
               <span className="h-line block whitespace-nowrap text-[10vw] md:text-[6.5vw]">
-                <em className="italic text-golden-amber">High-end</em> windows
+                <em className="not-italic text-golden-amber">High-end</em> windows
               </span>
             </span>
             <span className="block overflow-hidden">

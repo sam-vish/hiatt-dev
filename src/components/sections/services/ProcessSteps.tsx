@@ -73,14 +73,16 @@ export default function ProcessSteps() {
                       : 'md:left-[-5px]'
                   }`}
                 />
-                <div className="pl-12 md:pl-0">
+                <div className={`pl-12 md:pl-0 ${i % 2 === 0 ? 'md:text-right' : ''}`}>
                   <div className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/50 mb-4 tabular-nums">
                     {step.num}
                   </div>
                   <h3 className="font-display font-light text-3xl md:text-4xl mb-4 leading-tight">
                     {step.name}
                   </h3>
-                  <p className="font-body text-sm md:text-base text-travertine/70 leading-relaxed text-pretty max-w-[42ch]">
+                  <p className={`font-body text-sm md:text-base text-travertine/70 leading-relaxed text-pretty max-w-[42ch] ${
+                    i % 2 === 0 ? 'md:ml-auto' : ''
+                  }`}>
                     {step.description}
                   </p>
                 </div>

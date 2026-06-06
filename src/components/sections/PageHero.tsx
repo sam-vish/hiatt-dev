@@ -55,7 +55,7 @@ export default function PageHero({
               </span>
               {italicTitle && (
                 <span className="block overflow-hidden">
-                  <span className="h-line block text-[14vw] md:text-[8vw] italic text-golden-amber">
+                  <span className="h-line block text-[14vw] md:text-[8vw] text-golden-amber">
                     {italicTitle}
                   </span>
                 </span>

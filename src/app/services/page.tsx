@@ -18,7 +18,7 @@ export default function ServicesPage() {
         pageNumber="03"
         pageLabel="Services"
         title="Three services."
-        italicTitle="One licensed general contractor managing every phase."
+        italicTitle="One contractor."
         intro="From whole-house glazing on a Winter Park estate to storefront curtain wall in downtown Orlando — every project runs through the same six-phase process and the same GC license. Specialized in the installation of high-end, custom windows and doors across Central Florida."
         meta={['Residential', 'Commercial', 'Installation']}
       />

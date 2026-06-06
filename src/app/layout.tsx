@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import SiteShell from '@/components/layout/SiteShell'
 
@@ -31,6 +32,14 @@ export default function RootLayout({
       </head>
       <body>
         <SiteShell>{children}</SiteShell>
+        {/* LeadConnector (GHL) chat widget — loaded sitewide */}
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a20a0de95223f38469ca518"
+          data-source="WEB_USER"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

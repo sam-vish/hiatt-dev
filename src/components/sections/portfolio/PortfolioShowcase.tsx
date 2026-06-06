@@ -78,7 +78,7 @@ export default function PortfolioShowcase({ projects }: { projects: Project[] })
           {isVideo(active.cover) ? (
             <video
               className="absolute inset-0 h-full w-full object-cover"
-              src={active.cover}
+              src={`${active.cover}#t=0.1`}
               muted
               playsInline
               preload="metadata"
@@ -162,7 +162,7 @@ export default function PortfolioShowcase({ projects }: { projects: Project[] })
                   {isVideo(p.cover) ? (
                     <video
                       className="absolute inset-0 h-full w-full object-cover"
-                      src={p.cover}
+                      src={`${p.cover}#t=0.1`}
                       muted
                       playsInline
                       preload="metadata"

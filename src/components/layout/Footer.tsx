@@ -40,14 +40,14 @@ export default function Footer() {
     <footer className="relative bg-ink text-travertine overflow-hidden">
       <div className="absolute inset-0 grain animate-grain-shift opacity-30" />
 
-      <div className="relative border-y border-travertine/15 py-6">
-        <Marquee speed={45} className="font-display text-[10vw] md:text-[7vw] italic font-light tracking-tight leading-none">
-          <span className="px-8">Built in Orlando</span>
-          <span className="px-8 text-travertine/40">·</span>
-          <span className="px-8">Installed across Central Florida</span>
-          <span className="px-8 text-travertine/40">·</span>
-          <span className="px-8 not-italic font-normal">EST. 2008</span>
-          <span className="px-8 text-travertine/40">·</span>
+      <div className="relative border-y border-travertine/15 py-3">
+        <Marquee speed={30} className="font-mono text-[11px] md:text-xs tracking-[0.3em] uppercase text-travertine/45 leading-none">
+          <span className="px-6">Built in Orlando</span>
+          <span className="px-6 text-travertine/25">·</span>
+          <span className="px-6">Installed across Central Florida</span>
+          <span className="px-6 text-travertine/25">·</span>
+          <span className="px-6">EST. 2008</span>
+          <span className="px-6 text-travertine/25">·</span>
         </Marquee>
       </div>
 

@@ -17,7 +17,7 @@ export default function PortfolioStrip({ projects }: { projects: Project[] }) {
                 — Selected work
               </div>
               <h2 className="font-display font-light text-balance text-[10vw] md:text-[5.5vw] leading-[0.95]">
-                A glimpse of <em className="italic text-golden-amber">what we&apos;ve built.</em>
+                A glimpse of <em className="not-italic text-golden-amber">what we&apos;ve built.</em>
               </h2>
             </div>
           </Reveal>
@@ -65,7 +65,7 @@ function PortfolioCard({ project }: { project: Project }) {
       {showVideo ? (
         <video
           className="absolute inset-0 h-full w-full object-cover"
-          src={project.cover}
+          src={`${project.cover}#t=0.1`}
           muted
           playsInline
           preload="metadata"

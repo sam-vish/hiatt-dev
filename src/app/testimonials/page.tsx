@@ -16,8 +16,8 @@ export default function TestimonialsPage() {
       <PageHero
         pageNumber="06"
         pageLabel="Testimonials"
-        title="What architects and builders say"
-        italicTitle="about working with us."
+        title="In their"
+        italicTitle="own words."
         intro="Builders, architects, and dealers we work with — in their own words. Content to be supplied by the client."
         meta={['Custom builders', 'Architects', 'High-end dealers']}
       />

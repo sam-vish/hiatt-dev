@@ -29,17 +29,19 @@ export const TEAM: TeamMember[] = [
     image: '/images/hudson.avif',
   },
   {
-    name: 'Jonathan Barkman',
-    role: 'Assistant Project Manager',
-    bio: 'On-site before sunrise. Translates plans into materials, materials into walls, walls into a finished room — without the homeowner ever feeling rushed.',
-    pull: 'On-site before sunrise.',
-    image: '/images/jonathan.avif',
+    // TODO: confirm role, bio, pull quote, and photo with client
+    name: 'Steven',
+    role: 'Team Member',
+    bio: 'Bio coming soon.',
+    pull: 'Bio coming soon.',
+    image: '/images/team-placeholder.webp',
   },
   {
-    name: 'Juli Knowles',
-    role: 'Operations Manager',
-    bio: 'Connects every part of the operation. The throughline between client, vendor, crew, and calendar.',
-    pull: 'The throughline.',
-    image: '/images/juli.avif',
+    // TODO: confirm role, bio, pull quote, and photo with client
+    name: 'Camdyn',
+    role: 'Team Member',
+    bio: 'Bio coming soon.',
+    pull: 'Bio coming soon.',
+    image: '/images/team-placeholder.webp',
   },
 ]

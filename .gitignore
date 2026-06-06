@@ -32,3 +32,6 @@ public/videos/*.mov
 
 # Reference documents (kept locally, not shipped)
 public/*.pdf
+
+# Raw uncompressed source videos (compressed versions live in public/videos-compressed)
+public/portfolio-videos-new/

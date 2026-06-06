@@ -29,7 +29,7 @@ export default function CtaBlock({
             </div>
             <h2 className="font-display font-light text-pivot-black text-balance text-[10vw] md:text-[5.5vw] leading-[1] tracking-tight">
               {heading}{' '}
-              {emphasis && <em className="italic text-golden-amber">{emphasis}</em>}
+              {emphasis && <em className="not-italic text-golden-amber">{emphasis}</em>}
             </h2>
           </Reveal>
           <Reveal className="md:col-span-4 flex md:justify-end" delay={0.15}>
