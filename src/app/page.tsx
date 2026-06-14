@@ -91,7 +91,7 @@ export default function HomePage() {
 
       <CtaBlock
         heading="The installer Orlando's"
-        emphasis="architects and custom builders call first."
+        emphasis="custom builders, architects, and homeowners call first."
       />
     </>
   )

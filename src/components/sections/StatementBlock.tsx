@@ -48,7 +48,7 @@ export default function StatementBlock({ eyebrow, body, emphasis, align = 'left'
           </div>
           <p
             ref={ref}
-            className="font-display font-light text-pivot-black text-[7vw] md:text-[3.6vw] leading-[1.1] tracking-tight max-w-[24ch] text-balance"
+            className="font-display font-light text-pivot-black text-[7vw] md:text-[3.6vw] leading-[1.1] tracking-tight max-w-none text-balance"
           >
             {body}
           </p>

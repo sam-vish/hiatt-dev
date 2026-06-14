@@ -15,24 +15,21 @@ type Props = {
 }
 
 const DEFAULT_LOGOS: Logo[] = [
-  { name: 'PGT', src: '/client-logos/pgt-logo.webp' },
-  { name: 'Marvin', src: '/client-logos/marvin.webp' },
-  { name: 'Loewen', src: '/client-logos/loewen.webp' },
-  { name: 'Sierra Pacific', src: '/client-logos/sierra-pacific.webp' },
-  { name: 'Weather Shield', src: '/client-logos/weather-shield.webp' },
-  { name: 'Euro-Wall', src: '/client-logos/euro-wall.webp' },
-  { name: 'ES Windows', src: '/client-logos/es-windows.webp' },
-  { name: 'French Steel', src: '/client-logos/french-steel.avif' },
-  { name: 'Unilux', src: '/client-logos/unilux.avif' },
-  { name: 'Titoni', src: '/client-logos/titoni.webp' },
-  { name: 'Velocity Impact', src: '/client-logos/velocity-impact.webp' },
+  { name: 'LaCantina', src: '/supplier-logos/lacantina-logo.webp' },
+  { name: 'WinDoor', src: '/supplier-logos/WINDOOR-LOGO-1-300x162.webp' },
+  { name: 'Palm City Iron Works', src: '/supplier-logos/palm-city-fireworks.png' },
 ]
 
 export default function ClientLogos({
   eyebrow = 'Suppliers we install',
-  heading = '11 manufacturer relationships. Every product we install, we stand behind.',
+  heading = 'Every product we install, we stand behind.',
   logos = DEFAULT_LOGOS,
 }: Props) {
+  // Repeat short lists so one copy of the track is wider than the viewport —
+  // otherwise the seamless marquee shows blank gaps as it loops.
+  const reps = Math.max(1, Math.ceil(8 / logos.length))
+  const display = Array.from({ length: reps }).flatMap(() => logos)
+
   return (
     <section className="relative bg-travertine py-24 md:py-32 border-y border-florida-oak/10">
       <div className="mx-auto max-w-[1600px]">
@@ -48,9 +45,9 @@ export default function ClientLogos({
         </Reveal>
 
         <Marquee speed={45}>
-          {logos.map((logo) => (
+          {display.map((logo, i) => (
             <div
-              key={logo.name}
+              key={`${logo.name}-${i}`}
               className="flex h-32 md:h-40 w-56 md:w-72 items-center justify-center px-6 md:px-10 shrink-0"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}

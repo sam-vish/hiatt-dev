@@ -6,7 +6,6 @@ import Reveal from '@/components/motion/Reveal'
 const PROJECT_TYPES = [
   { value: 'residential', label: 'Residential — new build or renovation' },
   { value: 'commercial', label: 'Commercial — office, retail, hospitality' },
-  { value: 'install-only', label: 'Install only — windows / doors I already have' },
   { value: 'consult', label: 'Consult — I want a second set of eyes' },
 ]
 
@@ -92,7 +91,7 @@ export default function ContactBlock() {
                 </div>
                 <Field label="Name" id="name" focused={field === 'name'} setFocus={setField} required />
                 <Field label="Email" id="email" type="email" focused={field === 'email'} setFocus={setField} required />
-                <Field label="Phone" id="phone" type="tel" focused={field === 'phone'} setFocus={setField} />
+                <Field label="Phone" id="phone" type="tel" focused={field === 'phone'} setFocus={setField} required />
                 <Field label="City / Project address" id="city" focused={field === 'city'} setFocus={setField} />
 
                 <div className="flex flex-col gap-3">

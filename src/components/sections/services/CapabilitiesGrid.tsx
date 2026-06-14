@@ -10,7 +10,6 @@ const CAPS: Capability[] = [
   { num: '03', label: 'Folding glass walls', href: 'https://www.nanawall.com/glass-walls/folding' },
   { num: '04', label: 'Pivot doors, custom hardware', href: 'https://www.fritsjurgens.com/pivot-hinge' },
   { num: '05', label: 'Storefront & curtain wall', href: 'https://www.kawneer.com/products/curtain-wall/1600-wall-system1-curtain-wall/' },
-  { num: '06', label: 'Field templating & shop drawings', href: 'https://www.prodim-systems.com/industries/doors-windows/' },
 ]
 
 export default function CapabilitiesGrid() {

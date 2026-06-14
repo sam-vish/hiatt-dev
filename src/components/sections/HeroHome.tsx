@@ -5,10 +5,7 @@ import Link from 'next/link'
 import { gsap } from 'gsap'
 import MagneticLink from '@/components/motion/MagneticLink'
 
-const KEYWORDS = ['Integrity', 'Collaboration', 'Stewardship']
-
 export default function HeroHome() {
-  const wordsRef = useRef<(HTMLDivElement | null)[]>([])
   const taglineRef = useRef<HTMLDivElement>(null)
   const ctaRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -55,15 +52,6 @@ export default function HeroHome() {
         '-=0.5'
       )
     }
-    wordsRef.current.forEach((w, i) => {
-      if (!w) return
-      tl.fromTo(
-        w,
-        { opacity: 0, x: -20 },
-        { opacity: 1, x: 0, duration: 0.5, ease: 'power2.out' },
-        `-=${0.4 - i * 0.08}`
-      )
-    })
     return () => {
       tl.kill()
     }
@@ -145,28 +133,6 @@ export default function HeroHome() {
             </Link>
           </div>
         </div>
-      </div>
-
-      {/* Bottom-left stacked values */}
-      <div className="absolute bottom-24 left-6 md:left-10 z-10 flex flex-col gap-3 max-w-[40ch]">
-        {KEYWORDS.map((word, i) => (
-          <div
-            key={word}
-            ref={(el) => {
-              wordsRef.current[i] = el
-            }}
-            className="flex items-center gap-4"
-            style={{ opacity: 0 }}
-          >
-            <span className="font-mono text-[12px] tracking-[0.32em] text-travertine/50 tabular-nums w-6">
-              {String(i + 1).padStart(2, '0')}
-            </span>
-            <span className="font-display italic text-2xl md:text-3xl text-travertine">
-              {word}
-            </span>
-            <span className="hidden md:block h-px flex-1 bg-travertine/20" />
-          </div>
-        ))}
       </div>
 
       {/* Bottom-right scroll cue */}

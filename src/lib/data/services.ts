@@ -12,7 +12,7 @@ export const PILLARS: Pillar[] = [
   {
     id: 'residential',
     num: '01',
-    name: 'Custom Residential',
+    name: 'Custom New-Build Residential',
     blurb: 'Whole-house glazing, renovations, and new construction — managed by a licensed general contractor from permit to walkthrough.',
     details: [
       'Whole-house glazing',
@@ -40,10 +40,9 @@ export const PILLARS: Pillar[] = [
   {
     id: 'installation',
     num: '03',
-    name: 'Installation',
+    name: 'Renovation',
     blurb: 'Custom windows and doors — specified to the opening, ordered direct, installed by the crew that pulled the permit, and covered under warranty.',
     details: [
-      'Field templating and shop drawings',
       'Impact-rated glazing for hurricane zones',
       'Multi-track sliding and folding wall systems',
       'Pivot doors and custom millwork integration',

@@ -4,7 +4,7 @@ import { useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import type { Project } from '@/lib/data/projects'
 
-const FILTERS = ['All', 'Residential', 'Commercial'] as const
+const FILTERS = ['All', 'Residential'] as const
 type Filter = (typeof FILTERS)[number]
 
 const isVideo = (src: string) => /\.(mp4|webm|mov)$/i.test(src)
