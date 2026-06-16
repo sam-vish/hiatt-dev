@@ -8,7 +8,8 @@ const NAV = [
   { href: '/', label: 'Index' },
   { href: '/services', label: 'Services' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/testimonials', label: 'Testimonials' },
+  // Testimonials hidden until real Google reviews are supplied post-launch — restore this line to bring it back.
+  // { href: '/testimonials', label: 'Testimonials' },
   { href: '/contact', label: 'Contact' },
 ]
 

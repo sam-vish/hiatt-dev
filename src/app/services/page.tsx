@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import PageHero from '@/components/sections/PageHero'
 import PillarStack from '@/components/sections/services/PillarStack'
 import ProcessSteps from '@/components/sections/services/ProcessSteps'
-import CapabilitiesGrid from '@/components/sections/services/CapabilitiesGrid'
 import CtaBlock from '@/components/sections/CtaBlock'
 
 export const metadata: Metadata = {
@@ -25,7 +24,6 @@ export default function ServicesPage() {
 
       <PillarStack />
       <ProcessSteps />
-      <CapabilitiesGrid />
 
       <CtaBlock
         heading="Tell us about the opening."

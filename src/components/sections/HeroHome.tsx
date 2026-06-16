@@ -76,15 +76,15 @@ export default function HeroHome() {
       <div className="absolute inset-0 bg-ink/35 pointer-events-none" />
 
       {/* Top eyebrow row */}
-      <div className="relative z-10 grid grid-cols-2 md:grid-cols-3 items-start px-6 md:px-10 pt-28 md:pt-32">
-        <div className="font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/70">
+      <div className="relative z-10 grid grid-cols-2 md:grid-cols-3 items-start gap-4 px-6 md:px-10 pt-28 md:pt-32">
+        <div className="font-mono text-[10px] md:text-[12px] tracking-[0.18em] md:tracking-[0.32em] uppercase text-travertine/70">
           <div>— Hiatt Development Co.</div>
           <div className="text-travertine/40 mt-1">28.5° N, 81.4° W</div>
         </div>
         <div className="hidden md:flex justify-center font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/70">
           <div>Index — 01 / 06</div>
         </div>
-        <div className="text-right font-mono text-[12px] tracking-[0.32em] uppercase text-travertine/70 tabular-nums">
+        <div className="text-right font-mono text-[10px] md:text-[12px] tracking-[0.18em] md:tracking-[0.32em] uppercase text-travertine/70 tabular-nums whitespace-nowrap">
           {time}
         </div>
       </div>
