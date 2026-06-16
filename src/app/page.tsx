@@ -15,7 +15,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   description:
     'GC-licensed custom window and door installer serving Central Florida since 2008. Specializing in residential and commercial installation for architects, custom builders, and general contractors.',
   url: 'https://hiattdevelopment.com',
-  telephone: '+14074885620',
+  telephone: '+16892285003',
   email: 'sales@hiattdevelopment.com',
   foundingDate: '2008',
   address: {

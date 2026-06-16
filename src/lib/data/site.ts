@@ -11,8 +11,8 @@ export const SITE = {
     address: '1453 West Landstreet Rd, Suite 302',
     cityState: 'Orlando, FL 32824',
     email: 'sales@hiattdevelopment.com',
-    phone: '407-488-5620',
-    phoneDisplay: '407 · 488 · 5620',
+    phone: '689-228-5003',
+    phoneDisplay: '689 · 228 · 5003',
   },
   social: {
     instagram: 'https://www.instagram.com',

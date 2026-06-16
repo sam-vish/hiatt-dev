@@ -57,10 +57,10 @@ export default function Navigation() {
 
           <div className="hidden xl:flex items-center gap-3 2xl:gap-4 shrink-0">
             <a
-              href="tel:407-488-5620"
+              href="tel:689-228-5003"
               className="font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/80 hover:text-travertine transition-colors whitespace-nowrap"
             >
-              407 · 488 · 5620
+              689 · 228 · 5003
             </a>
             <Link
               href="/contact"
@@ -124,7 +124,7 @@ export default function Navigation() {
           </nav>
 
           <div className="flex flex-col gap-2 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/70">
-            <a href="tel:407-488-5620" className="text-travertine">407 · 488 · 5620</a>
+            <a href="tel:689-228-5003" className="text-travertine">689 · 228 · 5003</a>
             <a href="mailto:sales@hiattdevelopment.com" className="text-travertine">
               sales@hiattdevelopment.com
             </a>

@@ -47,7 +47,7 @@ export default function ContactBlock() {
             <div className="flex flex-col gap-6 mt-6">
               <InfoLine label="Studio" value="1453 W. Landstreet Rd, Ste 302" />
               <InfoLine label="City" value="Orlando, FL 32824" />
-              <InfoLine label="Phone" value="407 · 488 · 5620" href="tel:407-488-5620" />
+              <InfoLine label="Phone" value="689 · 228 · 5003" href="tel:689-228-5003" />
               <InfoLine label="Email" value="sales@hiattdevelopment.com" href="mailto:sales@hiattdevelopment.com" />
               <InfoLine label="Hours" value="Mon — Fri · 8a — 4p EST" />
             </div>

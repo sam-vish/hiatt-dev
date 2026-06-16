@@ -17,7 +17,7 @@ export default function ContactPage() {
         title="Begin a"
         italicTitle="conversation."
         intro="Tell us about the opening, the plans, the timeline, or the idea. We read every form and we pick up the phone."
-        meta={['Orlando, FL', 'Mon — Fri · 8a — 4p EST', '407 · 488 · 5620']}
+        meta={['Orlando, FL', 'Mon — Fri · 8a — 4p EST', '689 · 228 · 5003']}
       />
       <ContactBlock />
     </>
