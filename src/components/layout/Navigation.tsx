@@ -42,7 +42,7 @@ export default function Navigation() {
                 href={item.href}
                 className="group relative font-mono text-[12px] tracking-[0.2em] uppercase whitespace-nowrap"
               >
-                <span className="hidden 2xl:inline mr-2 text-travertine/60 tabular-nums">
+                <span className="mr-2 text-travertine/60 tabular-nums">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 {item.label}
@@ -63,7 +63,7 @@ export default function Navigation() {
               689 · 228 · 5003
             </a>
             <Link
-              href="/contact"
+              href="/contact#request"
               className="group relative inline-flex items-center gap-2 px-5 py-2.5 border border-travertine font-mono text-[12px] tracking-[0.24em] uppercase overflow-hidden whitespace-nowrap"
               data-cursor-hover
             >

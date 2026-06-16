@@ -17,7 +17,7 @@ export default function CtaBlock({
   heading,
   emphasis,
   ctaLabel = 'Start the conversation',
-  ctaHref = '/contact',
+  ctaHref = '/contact#request',
 }: Props) {
   return (
     <section className="relative bg-travertine-deep py-32 md:py-44 overflow-hidden">

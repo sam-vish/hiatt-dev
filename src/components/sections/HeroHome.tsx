@@ -115,7 +115,7 @@ export default function HeroHome() {
           <div ref={ctaRef} className="mt-12 flex items-center gap-6" style={{ opacity: 0 }}>
             <MagneticLink>
               <Link
-                href="/contact"
+                href="/contact#request"
                 data-cursor-hover
                 data-cursor-label="say hi"
                 className="group relative inline-flex items-center gap-3 px-8 py-4 border border-travertine/80 font-mono text-[13px] tracking-[0.24em] uppercase text-travertine overflow-hidden"

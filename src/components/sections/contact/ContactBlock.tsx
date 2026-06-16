@@ -39,7 +39,7 @@ export default function ContactBlock() {
               — Begin a project
             </div>
             <h2 className="font-display font-light text-balance text-[12vw] md:text-[5vw] leading-[0.95]">
-              Tell us about <em className="italic text-golden-amber">the opening.</em>
+              Tell us about <em className="italic text-travertine">the opening.</em>
             </h2>
           </Reveal>
 
@@ -69,7 +69,7 @@ export default function ContactBlock() {
           </Reveal>
         </div>
 
-        <div className="md:col-span-6 md:col-start-7">
+        <div id="request" className="md:col-span-6 md:col-start-7 scroll-mt-28">
           <Reveal>
             {sent ? (
               <div className="bg-travertine text-pivot-black p-10 md:p-14">

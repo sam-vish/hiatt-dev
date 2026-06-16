@@ -84,16 +84,16 @@ function PortfolioCard({ project }: { project: Project }) {
           <span>— {project.type}</span>
           <span>{project.year}</span>
         </div>
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h3 className="font-display text-3xl md:text-4xl font-light leading-tight">
+        <div className="flex items-end justify-end md:justify-between gap-4">
+          <div className="text-right md:text-left">
+            <h3 className="font-display text-xl md:text-4xl font-light leading-tight">
               {project.title}
             </h3>
-            <div className="mt-2 font-mono text-[12px] tracking-[0.24em] uppercase text-travertine/70">
+            <div className="mt-2 font-mono text-[11px] md:text-[12px] tracking-[0.24em] uppercase text-travertine/70">
               {project.city}
             </div>
           </div>
-          <span className="font-mono text-[12px] tracking-[0.24em] uppercase translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-exhale">
+          <span className="hidden md:inline-flex font-mono text-[12px] tracking-[0.24em] uppercase translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-exhale">
             Read →
           </span>
         </div>

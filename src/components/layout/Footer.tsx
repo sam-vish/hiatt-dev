@@ -8,9 +8,7 @@ const COLUMNS = [
     label: 'Site',
     items: [
       { href: '/', label: 'Index' },
-      { href: '/about', label: 'About' },
       { href: '/services', label: 'Services' },
-      { href: '/products', label: 'Products' },
       { href: '/portfolio', label: 'Work' },
       { href: '/contact', label: 'Contact' },
     ],
@@ -25,12 +23,10 @@ const COLUMNS = [
     ],
   },
   {
-    label: 'Studio',
+    label: 'Legal',
     items: [
-      { href: '/about#story', label: 'Story' },
-      { href: '/about#team', label: 'Team' },
-      { href: '/about#philosophy', label: 'Philosophy' },
-      { href: '/services#process', label: 'Process' },
+      { href: '/privacy', label: 'Privacy Policy' },
+      { href: '/terms', label: 'Terms & Conditions' },
     ],
   },
 ]
@@ -61,7 +57,7 @@ export default function Footer() {
             an <em className="italic">idea.</em> We&apos;ll bring the rest.
           </h2>
           <Link
-            href="/contact"
+            href="/contact#request"
             className="group inline-flex w-fit items-center gap-3 text-travertine"
             data-cursor-hover
             data-cursor-label="say hi"
