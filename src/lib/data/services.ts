@@ -12,7 +12,7 @@ export const PILLARS: Pillar[] = [
   {
     id: 'residential',
     num: '01',
-    name: 'Custom New-Build Residential',
+    name: 'Custom Residential',
     blurb: 'Whole-house glazing, renovations, and new construction — managed by a licensed general contractor from permit to walkthrough.',
     details: [
       'Whole-house glazing',
